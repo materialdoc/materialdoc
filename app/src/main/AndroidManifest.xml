@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
@@ -27,6 +27,16 @@
 
         <activity
             android:name=".activity.FlatButtonActivity"
+            android:label="@string/title_activity_raised_button"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".activity.CircularProgressActivity"
+            android:label="@string/title_activity_raised_button"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".activity.LinearProgressActivity"
             android:label="@string/title_activity_raised_button"
             android:theme="@style/Theme.MaterialDoc" />
 

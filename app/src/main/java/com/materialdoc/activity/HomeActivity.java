@@ -75,11 +75,21 @@ public class HomeActivity extends AppCompatActivity {
 
     private void handleDocumentClick(int documentId) {
         switch (documentId) {
+
+            //Buttons
             case DocInfo.ID_RAISED_BUTTON:
                 RaisedButtonActivity.start(this);
                 break;
             case DocInfo.ID_FLAT_BUTTON:
                 FlatButtonActivity.start(this);
+                break;
+
+            //Progress
+            case DocInfo.ID_CIRCULAR_PROGRESS:
+                CircularProgressActivity.start(this);
+                break;
+            case DocInfo.ID_LINEAR_PROGRESS:
+                LinearProgressActivity.start(this);
                 break;
         }
     }

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Theme.MaterialDoc" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimaryDark">@color/blue_300</item>
@@ -9,6 +9,15 @@
     <style name="MyButton" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/indigo</item>
         <item name="colorButtonNormal">@color/pink</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/indigo</item>
+    </style>
+
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/indigo</item>
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">@color/pink</item>
     </style>
 
 </resources>
