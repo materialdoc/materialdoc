@@ -1,4 +1,4 @@
-package com.example.rd.materialdoc.data;
+package com.materialdoc.data;
 
 import android.graphics.drawable.Drawable;
 

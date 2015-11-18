@@ -1,4 +1,4 @@
-package com.example.rd.materialdoc.activity;
+package com.materialdoc.activity;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -8,12 +8,12 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.rd.materialdoc.R;
-import com.example.rd.materialdoc.adapter.DocAdapter;
-import com.example.rd.materialdoc.data.DocDescription;
-import com.example.rd.materialdoc.data.DocInfo;
-import com.example.rd.materialdoc.data.DocTitle;
-import com.example.rd.materialdoc.data.IViewType;
+import com.materialdoc.R;
+import com.materialdoc.adapter.DocAdapter;
+import com.materialdoc.data.DocDescription;
+import com.materialdoc.data.DocInfo;
+import com.materialdoc.data.DocTitle;
+import com.materialdoc.data.IViewType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,6 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                 RaisedButtonActivity.start(this);
                 break;
             case DocInfo.ID_FLAT_BUTTON:
+                FlatButtonActivity.start(this);
                 break;
         }
     }

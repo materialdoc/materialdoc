@@ -1,4 +1,4 @@
-package com.example.rd.materialdoc.data;
+package com.materialdoc.data;
 
 public class DocTitle extends IViewType {
 

@@ -1,4 +1,4 @@
-package com.example.rd.materialdoc.adapter;
+package com.materialdoc.adapter;
 
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
@@ -12,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.rd.materialdoc.R;
-import com.example.rd.materialdoc.data.DocDescription;
-import com.example.rd.materialdoc.data.DocTitle;
-import com.example.rd.materialdoc.data.IViewType;
+import com.materialdoc.R;
+import com.materialdoc.data.DocDescription;
+import com.materialdoc.data.DocTitle;
+import com.materialdoc.data.IViewType;
 
 import java.util.ArrayList;
 import java.util.List;
