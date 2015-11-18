@@ -1,25 +1,3 @@
 <resources>
-    <string name="app_name">Materialdoc</string>
-
-    <string name="buttons">Buttons</string>
-    <string name="raised_button">Raised Button</string>
-    <string name="raised_button_desc_short">A typically rectangular material button that lifts and displays ink reactions on press.</string>
-    <string name="flat_button">Flat Button</string>
-    <string name="flat_button_desc_short">A button made of ink that displays ink reactions on press but does not lift.</string>
-    <string name="progress">Progress</string>
-    <string name="circular_progress">Circular Progress</string>
-    <string name="linear_progress">Linear Progress</string>
-    <string name="circular_progress_desc_short">Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator.</string>
-    <string name="linear_progress_desc_short">A linear progress indicator should always fill from 0 to 100 and never decrease in value.</string>
-    <string name="selectrion_controls">Selection controls</string>
-    <string name="check_box">Check Box</string>
-    <string name="check_box_desc_short">Checkboxes allow the user to select multiple options from a set.</string>
-    <string name="radio_button">Radio Button</string>
-    <string name="radio_button_desc_short">Radio buttons allow the user to select one option from a set.</string>
-    <string name="Switch">Switch</string>
-    <string name="switch_desc_short">On/off switches toggle the state of a single settings option.</string>
-    <string name="text_fields">Text fields</string>
-    <string name="text_field">Text field</string>
-    <string name="text_field_desc_short">Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.</string>
-    <string name="title_activity_raised_button">RaisedButtonActivity</string>
+    <string name="app_name">Materialdoc.doc</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.materialdoc.adapter;
+package com.materialdoc.ui.adapter;
 
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
@@ -13,14 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.materialdoc.R;
-import com.materialdoc.data.DocDescription;
-import com.materialdoc.data.DocTitle;
-import com.materialdoc.data.IViewType;
+import com.materialdoc.ui.data.ItemDisplayable;
+import com.materialdoc.ui.data.TitleDisplayable;
+import com.materialdoc.ui.data.IViewType;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DocAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int ITEM_TYPE_TITLE = 1;
     private static final int ITEM_TYPE_DOC = 2;
@@ -28,7 +28,7 @@ public class DocAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<IViewType> mDataList;
     private Listener mListener;
 
-    public DocAdapter() {
+    public ItemAdapter() {
         mDataList = new ArrayList<>();
     }
 
@@ -40,7 +40,7 @@ public class DocAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 return new TitleViewHolder(confessionView);
 
             case ITEM_TYPE_DOC:
-                View categoryView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_doc, parent, false);
+                View categoryView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_child, parent, false);
                 return new DocumentViewHolder(categoryView);
         }
 
@@ -59,9 +59,9 @@ public class DocAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @Override
     public int getItemViewType(int position) {
         IViewType type = mDataList.get(position);
-        if (type instanceof DocTitle) {
+        if (type instanceof TitleDisplayable) {
             return ITEM_TYPE_TITLE;
-        } else if (type instanceof DocDescription) {
+        } else if (type instanceof ItemDisplayable) {
             return ITEM_TYPE_DOC;
         }
 
@@ -84,13 +84,13 @@ public class DocAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private void initTitle(@NonNull RecyclerView.ViewHolder holder, int position) {
         TitleViewHolder viewHolder = (TitleViewHolder) holder;
-        DocTitle title = (DocTitle) mDataList.get(position);
+        TitleDisplayable title = (TitleDisplayable) mDataList.get(position);
         fillTextField(viewHolder.txtTitle, title.getTitle());
     }
 
     private void initDoc(@NonNull RecyclerView.ViewHolder holder, int position) {
         DocumentViewHolder viewHolder = (DocumentViewHolder) holder;
-        final DocDescription desc = (DocDescription) mDataList.get(position);
+        final ItemDisplayable desc = (ItemDisplayable) mDataList.get(position);
 
         fillTextField(viewHolder.txtTitle, desc.getTitle());
         fillTextField(viewHolder.txtDescription, desc.getDescription());

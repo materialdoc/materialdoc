@@ -1,4 +1,4 @@
-package com.materialdoc.activity;
+package com.materialdoc.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;

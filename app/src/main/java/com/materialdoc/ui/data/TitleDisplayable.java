@@ -1,14 +1,12 @@
-package com.materialdoc.data;
+package com.materialdoc.ui.data;
 
-public class DocTitle extends IViewType {
+public class TitleDisplayable extends IViewType {
 
     private String mTitle;
 
-    public DocTitle(String title) {
+    public TitleDisplayable(String title) {
         mTitle = title;
     }
-
-    public DocTitle() {/*empty*/}
 
     public String getTitle() {
         return mTitle;

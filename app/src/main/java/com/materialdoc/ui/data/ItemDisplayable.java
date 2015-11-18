@@ -1,26 +1,24 @@
-package com.materialdoc.data;
+package com.materialdoc.ui.data;
 
 import android.graphics.drawable.Drawable;
 
-public class DocDescription extends IViewType {
-
-    public int getId() {
-        return mId;
-    }
+public class ItemDisplayable extends IViewType {
 
     private int mId;
     private String mTitle;
     private String mDescription;
     private Drawable mDrawable;
 
-    public DocDescription(int id, String title, String description, Drawable drawable) {
+    public ItemDisplayable(int id, String title, String description, Drawable drawable) {
         mId = id;
         mTitle = title;
         mDescription = description;
         mDrawable = drawable;
     }
 
-    public DocDescription() {/*empty*/}
+    public int getId() {
+        return mId;
+    }
 
     public String getTitle() {
         return mTitle;
