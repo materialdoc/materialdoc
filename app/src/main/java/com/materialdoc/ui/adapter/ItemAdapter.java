@@ -1,6 +1,6 @@
 package com.materialdoc.ui.adapter;
 
-import android.graphics.drawable.Drawable;
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -13,9 +13,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.materialdoc.R;
+import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
 import com.materialdoc.ui.data.TitleDisplayable;
-import com.materialdoc.ui.data.IViewType;
+import com.materialdoc.utils.L;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,24 +92,25 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private void initDoc(@NonNull RecyclerView.ViewHolder holder, int position) {
         DocumentViewHolder viewHolder = (DocumentViewHolder) holder;
-        final ItemDisplayable desc = (ItemDisplayable) mDataList.get(position);
+        final ItemDisplayable displayable = (ItemDisplayable) mDataList.get(position);
 
-        fillTextField(viewHolder.txtTitle, desc.getTitle());
-        fillTextField(viewHolder.txtDescription, desc.getDescription());
+        fillTextField(viewHolder.txtTitle, displayable.getTitle());
+        fillTextField(viewHolder.txtDescription, displayable.getDescription());
 
-        Drawable drawable = desc.getDrawable();
-        if (drawable == null) {
-            viewHolder.imgIcon.setVisibility(View.GONE);
-        } else {
-            viewHolder.imgIcon.setVisibility(View.VISIBLE);
-            viewHolder.imgIcon.setImageDrawable(drawable);
-        }
+        Context context = viewHolder.imgIcon.getContext().getApplicationContext();
+        String path = String.format("file:///android_asset/%s", displayable.getImagePath());
+        L.d(String.format("Loading image: %s", path));
+        Picasso.with(context)
+                .load(path)
+                .placeholder(R.drawable.ic_material)
+                .error(R.drawable.ic_material)
+                .into(viewHolder.imgIcon);
 
         viewHolder.layoutDoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mListener != null) {
-                    mListener.onDocumentClicked(desc.getId());
+                    mListener.onDocumentClicked(displayable.getId());
                 }
             }
         });

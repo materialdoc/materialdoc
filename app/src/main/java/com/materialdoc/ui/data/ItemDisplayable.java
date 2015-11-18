@@ -1,46 +1,48 @@
 package com.materialdoc.ui.data;
 
-import android.graphics.drawable.Drawable;
-
 public class ItemDisplayable extends IViewType {
 
-    private int mId;
-    private String mTitle;
-    private String mDescription;
-    private Drawable mDrawable;
+    private int id;
+    private String title;
+    private String description;
+    private String imagePath;
 
-    public ItemDisplayable(int id, String title, String description, Drawable drawable) {
-        mId = id;
-        mTitle = title;
-        mDescription = description;
-        mDrawable = drawable;
+    public ItemDisplayable(int id, String title, String description, String imagePath) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.imagePath = imagePath;
     }
 
     public int getId() {
-        return mId;
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
-        return mTitle;
+        return title;
     }
 
     public void setTitle(String title) {
-        this.mTitle = title;
+        this.title = title;
     }
 
     public String getDescription() {
-        return mDescription;
+        return description;
     }
 
     public void setDescription(String description) {
-        this.mDescription = description;
+        this.description = description;
     }
 
-    public Drawable getDrawable() {
-        return mDrawable;
+    public String getImagePath() {
+        return imagePath;
     }
 
-    public void setDrawable(Drawable drawable) {
-        this.mDrawable = drawable;
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 }

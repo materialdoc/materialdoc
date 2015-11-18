@@ -6,7 +6,7 @@
         "id": 10,
         "title": "Raised Button",
         "description": "A typically rectangular material button that lifts and displays ink reactions on press.",
-        "image": "image/path/1"
+        "image": "images/raised_button.png"
       },
       {
         "id": 20,

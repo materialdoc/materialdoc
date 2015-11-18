@@ -1,6 +1,5 @@
 package com.materialdoc.ui.activity;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,12 +9,12 @@ import android.support.v7.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.materialdoc.R;
+import com.materialdoc.model.data.ParentItem;
 import com.materialdoc.ui.adapter.ItemAdapter;
+import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
 import com.materialdoc.ui.data.ItemID;
 import com.materialdoc.ui.data.TitleDisplayable;
-import com.materialdoc.ui.data.IViewType;
-import com.materialdoc.model.data.ParentItem;
 import com.materialdoc.utils.IOUtils;
 import com.materialdoc.utils.L;
 
@@ -57,13 +56,11 @@ public class HomeActivity extends AppCompatActivity {
     private List<IViewType> toDisplayableList(@NonNull List<ParentItem> parentItemList) {
         List<IViewType> typeList = new ArrayList<>();
 
-        Drawable icon = getResources().getDrawable(R.drawable.ic_material);
-
         for (ParentItem parentItemItem : parentItemList) {
             typeList.add(new TitleDisplayable(parentItemItem.title));
             if(parentItemItem.itemsList != null) {
                 for (ParentItem.ChildItem item : parentItemItem.itemsList) {
-                    ItemDisplayable description = new ItemDisplayable(item.id, item.title, item.description, icon);
+                    ItemDisplayable description = new ItemDisplayable(item.id, item.title, item.description, item.image);
                     typeList.add(description);
                 }
             }
