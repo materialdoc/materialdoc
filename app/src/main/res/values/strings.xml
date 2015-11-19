@@ -4,4 +4,7 @@
     <string name="disabled">disabled</string>
     <string name="Button">Button</string>
     <string name="enabled">enabled</string>
+    <string name="single_line">single line</string>
+    <string name="styled">styled</string>
+    <string name="multi_line">multi line</string>
 </resources>

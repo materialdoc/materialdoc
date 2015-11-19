@@ -41,4 +41,15 @@
         <item name="android:colorForeground">@color/grey_400</item>
     </style>
 
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/pink</item>
+    </style>
+
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+    </style>
+
 </resources>

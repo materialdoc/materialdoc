@@ -114,6 +114,11 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.SWITCH:
                 SwitchActivity.start(this);
                 break;
+
+            //edit fields
+            case ItemID.TEXT_FIELD:
+                EditFieldActivity.start(this);
+                break;
         }
     }
 }
