@@ -8,16 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.materialdoc.R;
 
-public class CircularProgressActivity extends AppCompatActivity{
+public class RadioButtonActivity extends AppCompatActivity {
 
     public static void start(@NonNull Activity activity) {
-        Intent intent = new Intent(activity, CircularProgressActivity.class);
+        Intent intent = new Intent(activity, RadioButtonActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_circular_progress);
+        setContentView(R.layout.ac_radio_button);
     }
 }

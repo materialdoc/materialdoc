@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity {
 
         for (ParentItem parentItemItem : parentItemList) {
             typeList.add(new TitleDisplayable(parentItemItem.title));
-            if(parentItemItem.itemsList != null) {
+            if (parentItemItem.itemsList != null) {
                 for (ParentItem.ChildItem item : parentItemItem.itemsList) {
                     ItemDisplayable description = new ItemDisplayable(item.id, item.title, item.description, item.image);
                     typeList.add(description);
@@ -102,6 +102,17 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case ItemID.LINEAR_PROGRESS:
                 LinearProgressActivity.start(this);
+                break;
+
+            //Selection controls
+            case ItemID.CHECK_BOX:
+                CheckBoxActivity.start(this);
+                break;
+            case ItemID.RADIO_BUTTON:
+                RadioButtonActivity.start(this);
+                break;
+            case ItemID.SWITCH:
+                SwitchActivity.start(this);
                 break;
         }
     }

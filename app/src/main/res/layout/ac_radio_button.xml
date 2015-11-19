@@ -18,7 +18,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginRight="16dp"
             android:paddingLeft="4dp"
-            android:text="@string/normal" />
+            android:text="@string/enabled" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,34 +27,37 @@
             android:paddingLeft="4dp"
             android:text="@string/disabled" />
 
-
-        <Button
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@string/Button" />
+            android:checked="true"
+            android:text="Radio Button" />
 
-        <Button
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
+            android:checked="true"
             android:enabled="false"
-            android:text="@string/Button" />
+            android:text="Radio Button" />
 
-        <Button
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@string/Button"
-            android:theme="@style/MyButton" />
+            android:checked="true"
+            android:text="Radio Button"
+            android:theme="@style/MyRadioButton" />
 
-        <Button
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
+            android:checked="true"
             android:enabled="false"
-            android:text="@string/Button"
-            android:theme="@style/MyButton" />
+            android:text="Radio Button"
+            android:theme="@style/MyRadioButton" />
 
     </GridLayout>
 

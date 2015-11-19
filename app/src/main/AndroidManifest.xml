@@ -6,12 +6,12 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialDoc">
         <activity
             android:name=".ui.activity.HomeActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,18 +22,37 @@
 
         <activity
             android:name=".ui.activity.RaisedButtonActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
             android:name=".ui.activity.FlatButtonActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
             android:name=".ui.activity.CircularProgressActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
             android:name=".ui.activity.LinearProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.RadioButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.CheckBoxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.SwitchActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
     </application>

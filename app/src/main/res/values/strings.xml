@@ -3,4 +3,5 @@
     <string name="normal">normal</string>
     <string name="disabled">disabled</string>
     <string name="Button">Button</string>
+    <string name="enabled">enabled</string>
 </resources>
