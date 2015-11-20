@@ -98,13 +98,20 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         fillTextField(viewHolder.txtDescription, displayable.getDescription());
 
         Context context = viewHolder.imgIcon.getContext().getApplicationContext();
-        String path = String.format("file:///android_asset/%s", displayable.getImagePath());
-        L.d(String.format("Loading image: %s", path));
-        Picasso.with(context)
-                .load(path)
-                .placeholder(R.drawable.ic_material)
-                .error(R.drawable.ic_material)
-                .into(viewHolder.imgIcon);
+
+        if(TextUtils.isEmpty(displayable.getImagePath())) {
+            viewHolder.imageHolder.setVisibility(View.GONE);
+        } else {
+            String path = String.format("file:///android_asset/%s", displayable.getImagePath());
+            L.d(String.format("Loading image: %s", path));
+
+            Picasso.with(context)
+                    .load(path)
+                    .placeholder(R.drawable.ic_material)
+                    .error(R.drawable.ic_material)
+                    .into(viewHolder.imgIcon);
+            viewHolder.imageHolder.setVisibility(View.VISIBLE);
+        }
 
         viewHolder.layoutDoc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,6 +146,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         private TextView txtTitle;
         private TextView txtDescription;
         private ImageView imgIcon;
+        private ViewGroup imageHolder;
 
         public DocumentViewHolder(View v) {
             super(v);
@@ -147,6 +155,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             txtTitle = (TextView) v.findViewById(R.id.txtTitle);
             txtDescription = (TextView) v.findViewById(R.id.txtDescription);
             imgIcon = (ImageView) v.findViewById(R.id.imgIcon);
+            imageHolder = (ViewGroup) v.findViewById(R.id.imageHolder);
         }
     }
 
