@@ -63,7 +63,21 @@
         "id": 80,
         "title": "Text field",
         "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
-        "image": ""
+        "image": "",
+        "itemsArr": [
+          {
+            "id": 81,
+            "title": "Text field 1",
+            "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
+            "image": ""
+          },
+          {
+            "id": 82,
+            "title": "Text field 2",
+            "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
+            "image": ""
+          }
+        ]
       }
     ]
   },

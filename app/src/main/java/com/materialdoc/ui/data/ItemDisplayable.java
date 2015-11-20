@@ -1,5 +1,8 @@
 package com.materialdoc.ui.data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ItemDisplayable extends IViewType {
 
     private int id;
@@ -7,11 +10,14 @@ public class ItemDisplayable extends IViewType {
     private String description;
     private String imagePath;
 
+    private List<ItemDisplayable> mDisplayableList;
+
     public ItemDisplayable(int id, String title, String description, String imagePath) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.imagePath = imagePath;
+        mDisplayableList = new ArrayList<>();
     }
 
     public int getId() {
@@ -44,5 +50,13 @@ public class ItemDisplayable extends IViewType {
 
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
+    }
+
+    public List<ItemDisplayable> getDisplayableList() {
+        return mDisplayableList;
+    }
+
+    public void setDisplayableList(List<ItemDisplayable> displayableList) {
+        mDisplayableList = displayableList;
     }
 }

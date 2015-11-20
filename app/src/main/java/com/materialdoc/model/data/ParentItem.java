@@ -12,18 +12,4 @@ public class ParentItem {
     @SerializedName("itemsArr")
     public List<ChildItem> itemsList;
 
-    public class ChildItem {
-
-        @SerializedName("id")
-        public int id;
-
-        @SerializedName("title")
-        public String title;
-
-        @SerializedName("description")
-        public String description;
-
-        @SerializedName("image")
-        public String image;
-    }
 }

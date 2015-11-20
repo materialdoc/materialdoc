@@ -1,5 +1,7 @@
 package com.materialdoc.ui.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -9,12 +11,14 @@ import android.support.v7.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.materialdoc.R;
+import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
 import com.materialdoc.ui.adapter.ItemAdapter;
 import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
 import com.materialdoc.ui.data.ItemID;
 import com.materialdoc.ui.data.TitleDisplayable;
+import com.materialdoc.utils.GsonUtils;
 import com.materialdoc.utils.IOUtils;
 import com.materialdoc.utils.L;
 
@@ -33,22 +37,36 @@ import rx.schedulers.Schedulers;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private static final String EXTRAS_DATA = "EXTRAS_DATA";
+
     private ItemAdapter mAdapter;
+
+    public static Intent createIntent(@NonNull Context context, @NonNull List<ItemDisplayable> displayableList) {
+        Intent intent = new Intent(context, HomeActivity.class);
+        intent.putExtra(EXTRAS_DATA, GsonUtils.toJson(displayableList));
+        return intent;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_home);
         initRecycleView();
-        loadData();
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null && extras.containsKey(EXTRAS_DATA)) {
+            loadItemsFromExtras(extras);
+        } else {
+            loadRootItems();
+        }
     }
 
     private void initRecycleView() {
         mAdapter = new ItemAdapter();
         mAdapter.setListener(new ItemAdapter.Listener() {
             @Override
-            public void onDocumentClicked(int documentId) {
-                handleDocumentClick(documentId);
+            public void onDocumentClicked(ItemDisplayable displayable) {
+                handleDocumentClick(displayable);
             }
         });
 
@@ -60,7 +78,14 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
     }
 
-    private void loadData() {
+    private void loadItemsFromExtras(Bundle extras) {
+        String json = extras.getString(EXTRAS_DATA);
+        if (json != null) {
+            mAdapter.setData(GsonUtils.fromJson(json));
+        }
+    }
+
+    private void loadRootItems() {
         Observable.create(loadDataFromAssets())
                 .map(toDisplayable())
                 .subscribeOn(Schedulers.computation())
@@ -106,11 +131,18 @@ public class HomeActivity extends AppCompatActivity {
             public List<IViewType> call(List<ParentItem> parentItemList) {
                 List<IViewType> typeList = new ArrayList<>();
 
-                for (ParentItem parentItemItem : parentItemList) {
-                    typeList.add(new TitleDisplayable(parentItemItem.title));
-                    if (parentItemItem.itemsList != null) {
-                        for (ParentItem.ChildItem item : parentItemItem.itemsList) {
-                            typeList.add(new ItemDisplayable(item.id, item.title, item.description, item.image));
+                for (ParentItem parentItem : parentItemList) {
+                    typeList.add(new TitleDisplayable(parentItem.title));
+                    if (parentItem.itemsList != null) {
+                        for (ChildItem item : parentItem.itemsList) {
+                            ItemDisplayable displayable = new ItemDisplayable(item.id, item.title, item.description, item.image);
+                            if (item.mParentItemList != null) {
+                                for (ChildItem child : item.mParentItemList) {
+                                    displayable.getDisplayableList().add(new ItemDisplayable(child.id, child.title, child.description, child.image));
+                                }
+                            }
+
+                            typeList.add(displayable);
                         }
                     }
                 }
@@ -120,7 +152,8 @@ public class HomeActivity extends AppCompatActivity {
         };
     }
 
-    private void handleDocumentClick(int documentId) {
+    private void handleDocumentClick(ItemDisplayable displayable) {
+        int documentId = displayable.getId();
         switch (documentId) {
 
             //Buttons
@@ -152,7 +185,8 @@ public class HomeActivity extends AppCompatActivity {
 
             //edit fields
             case ItemID.TEXT_FIELD:
-                EditFieldActivity.start(this);
+                Intent intent = HomeActivity.createIntent(getApplicationContext(), displayable.getDisplayableList());
+                startActivity(intent);
                 break;
 
             //other

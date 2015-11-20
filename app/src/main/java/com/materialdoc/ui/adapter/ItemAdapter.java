@@ -79,7 +79,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         mListener = listener;
     }
 
-    public void setData(@NonNull List<IViewType> dataList) {
+    public void setData(@NonNull List<? extends IViewType> dataList) {
         mDataList.clear();
         mDataList.addAll(dataList);
     }
@@ -117,7 +117,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             @Override
             public void onClick(View v) {
                 if (mListener != null) {
-                    mListener.onDocumentClicked(displayable.getId());
+                    mListener.onDocumentClicked(displayable);
                 }
             }
         });
@@ -160,6 +160,6 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     public interface Listener {
-        void onDocumentClicked(int documentId);
+        void onDocumentClicked(ItemDisplayable displayable);
     }
 }
