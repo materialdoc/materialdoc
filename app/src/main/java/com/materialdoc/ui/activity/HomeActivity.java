@@ -24,20 +24,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import rx.Observable;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
+import rx.schedulers.Schedulers;
+
 public class HomeActivity extends AppCompatActivity {
+
+    private ItemAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_home);
         initRecycleView();
-        loadDataFromAssets();
+        loadData();
     }
 
     private void initRecycleView() {
-        ItemAdapter adapter = new ItemAdapter();
-        adapter.setData(toDisplayableList(loadDataFromAssets()));
-        adapter.setListener(new ItemAdapter.Listener() {
+        mAdapter = new ItemAdapter();
+        mAdapter.setListener(new ItemAdapter.Listener() {
             @Override
             public void onDocumentClicked(int documentId) {
                 handleDocumentClick(documentId);
@@ -49,40 +57,67 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(mAdapter);
+    }
+
+    private void loadData() {
+        Observable.create(loadDataFromAssets())
+                .map(toDisplayable())
+                .subscribeOn(Schedulers.computation())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<List<IViewType>>() {
+                    @Override
+                    public void call(List<IViewType> dataList) {
+                        mAdapter.setData(dataList);
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable e) {
+                        L.e("Error during loading json data list", e);
+                    }
+                });
     }
 
     @NonNull
-    private List<IViewType> toDisplayableList(@NonNull List<ParentItem> parentItemList) {
-        List<IViewType> typeList = new ArrayList<>();
+    private Observable.OnSubscribe<List<ParentItem>> loadDataFromAssets() {
+        return new Observable.OnSubscribe<List<ParentItem>>() {
+            @Override
+            public void call(Subscriber<? super List<ParentItem>> subscriber) {
 
-        for (ParentItem parentItemItem : parentItemList) {
-            typeList.add(new TitleDisplayable(parentItemItem.title));
-            if (parentItemItem.itemsList != null) {
-                for (ParentItem.ChildItem item : parentItemItem.itemsList) {
-                    ItemDisplayable description = new ItemDisplayable(item.id, item.title, item.description, item.image);
-                    typeList.add(description);
+                try {
+                    InputStream inputStream = getAssets().open("json/data.json");
+                    String json = IOUtils.toString(inputStream);
+                    Gson gson = new Gson();
+                    ParentItem[] parentItemArr = gson.fromJson(json, ParentItem[].class);
+
+                    subscriber.onNext(Arrays.asList(parentItemArr));
+                    subscriber.onCompleted();
+                } catch (IOException e) {
+                    subscriber.onError(e);
                 }
             }
-        }
-
-        return typeList;
+        };
     }
 
     @NonNull
-    private List<ParentItem> loadDataFromAssets() {
-        List<ParentItem> parentItemList = new ArrayList<>();
-        try {
-            InputStream inputStream = getAssets().open("json/data.json");
-            String json = IOUtils.toString(inputStream);
-            Gson gson = new Gson();
-            ParentItem[] parentItemArr = gson.fromJson(json, ParentItem[].class);
-            parentItemList.addAll(Arrays.asList(parentItemArr));
-        } catch (IOException e) {
-            L.e("Error during loading json data list", e);
-        }
+    private Func1<List<ParentItem>, List<IViewType>> toDisplayable() {
+        return new Func1<List<ParentItem>, List<IViewType>>() {
+            @Override
+            public List<IViewType> call(List<ParentItem> parentItemList) {
+                List<IViewType> typeList = new ArrayList<>();
 
-        return parentItemList;
+                for (ParentItem parentItemItem : parentItemList) {
+                    typeList.add(new TitleDisplayable(parentItemItem.title));
+                    if (parentItemItem.itemsList != null) {
+                        for (ParentItem.ChildItem item : parentItemItem.itemsList) {
+                            typeList.add(new ItemDisplayable(item.id, item.title, item.description, item.image));
+                        }
+                    }
+                }
+
+                return typeList;
+            }
+        };
     }
 
     private void handleDocumentClick(int documentId) {

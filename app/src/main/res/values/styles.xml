@@ -1,10 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.MaterialDoc" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimaryDark">@color/blue_300</item>
-        <item name="colorPrimary">@color/blue_200</item>
-        <item name="colorAccent">@color/blue_200</item>
-    </style>
+    <style name="Theme.MaterialDoc" parent="Theme.AppCompat.Light.DarkActionBar"/>
 
     <style name="MyButton" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/indigo</item>
