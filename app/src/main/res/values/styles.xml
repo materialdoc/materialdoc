@@ -49,7 +49,12 @@
     <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
         <item name="android:padding">20dp</item>
         <item name="android:background">@null</item>
-        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+        <item name="android:textSize" tools:ignore="PrivateResource">@dimen/abc_text_size_subhead_material</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/pink</item>
     </style>
 
 </resources>

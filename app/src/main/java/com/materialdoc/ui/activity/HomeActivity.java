@@ -119,6 +119,11 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.TEXT_FIELD:
                 EditFieldActivity.start(this);
                 break;
+
+            //other
+            case ItemID.RATING_BAR:
+                RatingBarActivity.start(this);
+                break;
         }
     }
 }

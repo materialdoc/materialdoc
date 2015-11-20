@@ -17,4 +17,7 @@ public class ItemID {
 
     //text field
     public static final int TEXT_FIELD = 80;
+
+    //other
+    public static final int RATING_BAR = 90;
 }

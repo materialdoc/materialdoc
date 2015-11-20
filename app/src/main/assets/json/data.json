@@ -66,5 +66,16 @@
         "image": "image/path/1"
       }
     ]
+  },
+  {
+    "title": "Other",
+    "itemsArr": [
+      {
+        "id": 90,
+        "title": "Rating Bar",
+        "description": "A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. ",
+        "image": "image/path/1"
+      }
+    ]
   }
 ]
