@@ -108,7 +108,6 @@ public class HomeActivity extends AppCompatActivity {
         return new Observable.OnSubscribe<List<ParentItem>>() {
             @Override
             public void call(Subscriber<? super List<ParentItem>> subscriber) {
-
                 try {
                     InputStream inputStream = getAssets().open("json/data.json");
                     String json = IOUtils.toString(inputStream);
@@ -187,6 +186,9 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.TEXT_FIELD:
                 Intent intent = HomeActivity.createIntent(getApplicationContext(), displayable.getDisplayableList());
                 startActivity(intent);
+                break;
+            case ItemID.TEXT_FIELD_ADD:
+                EditFieldActivity.start(this);
                 break;
 
             //other
