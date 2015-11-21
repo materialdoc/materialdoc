@@ -86,10 +86,39 @@
     ]
   },
   {
-    "title": "Other",
+    "title": "Tabs",
     "itemsArr": [
       {
         "id": 90,
+        "title": "Text only",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
+        "image": ""
+      },
+      {
+        "id": 100,
+        "title": "Icons only",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
+        "image": ""
+      },
+      {
+        "id": 110,
+        "title": "Icons and Text",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
+        "image": ""
+      },
+      {
+        "id": 120,
+        "title": "Styled",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Other",
+    "itemsArr": [
+      {
+        "id": 130,
         "title": "Rating Bar",
         "description": "A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. ",
         "image": ""

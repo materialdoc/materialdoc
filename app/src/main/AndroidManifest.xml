@@ -76,6 +76,26 @@
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
+            android:name=".ui.activity.tab.TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabIconActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabMultiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabStyledActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs.Styled" />
+
+        <activity
             android:name=".ui.activity.RatingBarActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />

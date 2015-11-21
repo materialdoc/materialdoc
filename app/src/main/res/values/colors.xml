@@ -2,6 +2,8 @@
 <resources>
 
     <color name="bg_color">#F9F9F9</color>
+    <color name="color_white_semitransparent">#80ffffff</color>
+
     <color name="grey_100">#F0F1F3</color>
     <color name="grey_200">#CFCFCF</color>
     <color name="grey_300">#A0A0A1</color>
@@ -12,5 +14,11 @@
 
     <color name="pink">#FF4081</color>
     <color name="indigo">#3F51B5</color>
+
+    <color name="blue_100">#00BCD4</color>
+    <color name="blue_200">#00A0B4</color>
+
+    <color name="violet_100">#3F51B5</color>
+    <color name="violet_200">#1A237E</color>
 
 </resources>

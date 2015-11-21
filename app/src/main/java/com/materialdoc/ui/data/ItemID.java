@@ -21,6 +21,12 @@ public class ItemID {
     public static final int INPUT_FIELD_MULTI_LINE = 82;
     public static final int INPUT_FIELD_FULL_WIDTH = 83;
 
+    //tabs
+    public static final int TABS_TEXT_ONLY = 90;
+    public static final int TABS_ICON_ONLY = 100;
+    public static final int TABS_ICON_AND_TEXT = 110;
+    public static final int TABS_STYLED = 120;
+
     //other
-    public static final int RATING_BAR = 90;
+    public static final int RATING_BAR = 130;
 }

@@ -23,6 +23,10 @@ import com.materialdoc.ui.activity.RadioButtonActivity;
 import com.materialdoc.ui.activity.RaisedButtonActivity;
 import com.materialdoc.ui.activity.RatingBarActivity;
 import com.materialdoc.ui.activity.SwitchActivity;
+import com.materialdoc.ui.activity.tab.TabActivity;
+import com.materialdoc.ui.activity.tab.TabIconActivity;
+import com.materialdoc.ui.activity.tab.TabMultiActivity;
+import com.materialdoc.ui.activity.tab.TabStyledActivity;
 import com.materialdoc.ui.adapter.ItemAdapter;
 import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
@@ -187,6 +191,21 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.INPUT_FIELD_FULL_WIDTH:
                 InputFullWidthActivity.start(this);
                 break;
+
+            //tab
+            case ItemID.TABS_TEXT_ONLY:
+                TabActivity.start(this);
+                break;
+            case ItemID.TABS_ICON_ONLY:
+                TabIconActivity.start(this);
+                break;
+            case ItemID.TABS_ICON_AND_TEXT:
+                TabMultiActivity.start(this);
+                break;
+            case ItemID.TABS_STYLED:
+                TabStyledActivity.start(this);
+                break;
+
 
             //other
             case ItemID.RATING_BAR:
