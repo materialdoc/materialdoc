@@ -1,4 +1,26 @@
-## Source code for materialdoc.com
+## About
+
+This application includes all source code (layouts, styles, colors) of [materialdoc.com](http://www.materialdoc.com/) tutorials
 
 <img src="screenshots/screenshot-1.png" width="300" />
 <img src="screenshots/screenshot-2.png" width="300" />
+
+Latest version 1.0 includes:
+
+- Buttons
+  - Raised Button
+  - Flat Button
+- Progress
+  - Circular Progress
+  - Linear Progress
+- Selection controls
+  - Check Box
+  - Radio Button
+  - Switch
+- Text fields
+  - Text field
+  - Single-line text field
+  - Multi-line text field
+  - Full-width text field
+- Other
+  - Rating Bar
