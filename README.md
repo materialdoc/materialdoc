@@ -1,11 +1,13 @@
 ## About
 
-This application includes all source code (layouts, styles, colors) of [materialdoc.com](http://www.materialdoc.com/) tutorials
+This application includes all source code (layouts, styles, colors) of [materialdoc.com](http://www.materialdoc.com/) tutorials.
+
+You can [download apk](https://github.com/materialdoc/materialdoc/releases) and check how material components will look on different Android versions.
 
 <img src="screenshots/screenshot-1.png" width="300" />
 <img src="screenshots/screenshot-2.png" width="300" />
 
-Latest version 1.0 includes:
+Latest version *1.0* includes:
 
 - Buttons
   - Raised Button
@@ -24,3 +26,8 @@ Latest version 1.0 includes:
   - Full-width text field
 - Other
   - Rating Bar
+
+### Authors
+
+- Roman Danylyk
+- Dmytro Danylyk
