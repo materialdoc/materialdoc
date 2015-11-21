@@ -16,7 +16,10 @@ public class ItemID {
     public static final int SWITCH = 70;
 
     //text field
-    public static final int TEXT_FIELD = 80;
+    public static final int INPUT_FIELD = 80;
+    public static final int INPUT_FIELD_SINGLE_LINE = 81;
+    public static final int INPUT_FIELD_MULTI_LINE = 82;
+    public static final int INPUT_FIELD_FULL_WIDTH = 83;
 
     //other
     public static final int RATING_BAR = 90;

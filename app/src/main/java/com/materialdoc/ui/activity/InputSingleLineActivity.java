@@ -8,16 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.materialdoc.R;
 
-public class EditFieldActivity extends AppCompatActivity {
+public class InputSingleLineActivity extends AppCompatActivity {
 
     public static void start(@NonNull Activity activity) {
-        Intent intent = new Intent(activity, EditFieldActivity.class);
+        Intent intent = new Intent(activity, InputSingleLineActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_edit_field);
+        setContentView(R.layout.ac_input_single_line);
     }
 }

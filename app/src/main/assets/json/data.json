@@ -66,19 +66,19 @@
         "image": ""
       },
       {
-        "id": 82,
+        "id": 81,
         "title": "Single-line text field",
         "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.",
         "image": ""
       },
       {
-        "id": 83,
+        "id": 82,
         "title": "Multi-line text field",
         "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.",
         "image": ""
       },
       {
-        "id": 84,
+        "id": 83,
         "title": "Full-width text field",
         "description": "Full-width text fields are useful for more in-depth tasks.",
         "image": ""

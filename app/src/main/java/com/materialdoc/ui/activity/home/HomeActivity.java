@@ -1,4 +1,4 @@
-package com.materialdoc.ui.activity;
+package com.materialdoc.ui.activity.home;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +11,18 @@ import com.google.gson.Gson;
 import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
+import com.materialdoc.ui.activity.CheckBoxActivity;
+import com.materialdoc.ui.activity.CircularProgressActivity;
+import com.materialdoc.ui.activity.FlatButtonActivity;
+import com.materialdoc.ui.activity.InputActivity;
+import com.materialdoc.ui.activity.InputFullWidthActivity;
+import com.materialdoc.ui.activity.InputMultiLineActivity;
+import com.materialdoc.ui.activity.InputSingleLineActivity;
+import com.materialdoc.ui.activity.LinearProgressActivity;
+import com.materialdoc.ui.activity.RadioButtonActivity;
+import com.materialdoc.ui.activity.RaisedButtonActivity;
+import com.materialdoc.ui.activity.RatingBarActivity;
+import com.materialdoc.ui.activity.SwitchActivity;
 import com.materialdoc.ui.adapter.ItemAdapter;
 import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
@@ -163,8 +175,17 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             //edit fields
-            case ItemID.TEXT_FIELD:
-                EditFieldActivity.start(this);
+            case ItemID.INPUT_FIELD:
+                InputActivity.start(this);
+                break;
+            case ItemID.INPUT_FIELD_SINGLE_LINE:
+                InputSingleLineActivity.start(this);
+                break;
+            case ItemID.INPUT_FIELD_MULTI_LINE:
+                InputMultiLineActivity.start(this);
+                break;
+            case ItemID.INPUT_FIELD_FULL_WIDTH:
+                InputFullWidthActivity.start(this);
                 break;
 
             //other

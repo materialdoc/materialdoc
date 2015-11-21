@@ -1,66 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:gravity="center"
-    android:orientation="vertical">
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:alignmentMode="alignBounds"
+    android:columnCount="2">
 
-    <GridLayout
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alignmentMode="alignBounds"
-        android:columnCount="2">
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="@string/normal"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="16dp"
-            android:paddingLeft="4dp"
-            android:text="@string/enabled" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:text="@string/disabled"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="16dp"
-            android:paddingLeft="4dp"
-            android:text="@string/disabled" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:checked="true"
+        android:text="@string/Check_Box"/>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:checked="true"
+        android:enabled="false"
+        android:text="@string/Check_Box"/>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:checked="true"
-            android:text="Check Box" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:checked="true"
+        android:text="@string/Check_Box"
+        android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:checked="true"
-            android:enabled="false"
-            android:text="Check Box" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:checked="true"
+        android:enabled="false"
+        android:text="@string/Check_Box"
+        android:theme="@style/MyCheckBox"/>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:checked="true"
-            android:text="Check Box"
-            android:theme="@style/MyCheckBox" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:checked="true"
-            android:enabled="false"
-            android:text="Check Box"
-            android:theme="@style/MyCheckBox" />
-
-    </GridLayout>
-
-</LinearLayout>
+</GridLayout>
