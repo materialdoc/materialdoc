@@ -1,6 +1,5 @@
 package com.materialdoc.ui.adapter;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +7,6 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,8 +14,6 @@ import com.materialdoc.R;
 import com.materialdoc.ui.data.IViewType;
 import com.materialdoc.ui.data.ItemDisplayable;
 import com.materialdoc.ui.data.TitleDisplayable;
-import com.materialdoc.utils.L;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,21 +93,21 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         fillTextField(viewHolder.txtTitle, displayable.getTitle());
         fillTextField(viewHolder.txtDescription, displayable.getDescription());
 
-        Context context = viewHolder.imgIcon.getContext().getApplicationContext();
-
-        if(TextUtils.isEmpty(displayable.getImagePath())) {
-            viewHolder.imageHolder.setVisibility(View.GONE);
-        } else {
-            String path = String.format("file:///android_asset/%s", displayable.getImagePath());
-            L.d(String.format("Loading image: %s", path));
-
-            Picasso.with(context)
-                    .load(path)
-                    .placeholder(R.drawable.ic_material)
-                    .error(R.drawable.ic_material)
-                    .into(viewHolder.imgIcon);
-            viewHolder.imageHolder.setVisibility(View.VISIBLE);
-        }
+//        Context context = viewHolder.imgIcon.getContext().getApplicationContext();
+//
+//        if(TextUtils.isEmpty(displayable.getImagePath())) {
+//            viewHolder.imageHolder.setVisibility(View.GONE);
+//        } else {
+//            String path = String.format("file:///android_asset/%s", displayable.getImagePath());
+//            L.d(String.format("Loading image: %s", path));
+//
+//            Picasso.with(context)
+//                    .load(path)
+//                    .placeholder(R.drawable.ic_material)
+//                    .error(R.drawable.ic_material)
+//                    .into(viewHolder.imgIcon);
+//            viewHolder.imageHolder.setVisibility(View.VISIBLE);
+//        }
 
         viewHolder.layoutDoc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,8 +141,8 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         private LinearLayout layoutDoc;
         private TextView txtTitle;
         private TextView txtDescription;
-        private ImageView imgIcon;
-        private ViewGroup imageHolder;
+//        private ImageView imgIcon;
+//        private ViewGroup imageHolder;
 
         public DocumentViewHolder(View v) {
             super(v);
@@ -154,8 +150,8 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             layoutDoc = (LinearLayout) v.findViewById(R.id.layoutDoc);
             txtTitle = (TextView) v.findViewById(R.id.txtTitle);
             txtDescription = (TextView) v.findViewById(R.id.txtDescription);
-            imgIcon = (ImageView) v.findViewById(R.id.imgIcon);
-            imageHolder = (ViewGroup) v.findViewById(R.id.imageHolder);
+//            imgIcon = (ImageView) v.findViewById(R.id.imgIcon);
+//            imageHolder = (ViewGroup) v.findViewById(R.id.imageHolder);
         }
     }
 

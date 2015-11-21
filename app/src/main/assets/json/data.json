@@ -63,33 +63,25 @@
         "id": 80,
         "title": "Text field",
         "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
-        "image": "",
-        "itemsArr": [
-          {
-            "id": 81,
-            "title": "Text field",
-            "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
-            "image": ""
-          },
-          {
-            "id": 82,
-            "title": "Single-line text field",
-            "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.",
-            "image": ""
-          },
-          {
-            "id": 83,
-            "title": "Multi-line text field",
-            "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.",
-            "image": ""
-          },
-          {
-            "id": 84,
-            "title": "Full-width text field",
-            "description": "ull-width text fields are useful for more in-depth tasks.",
-            "image": ""
-          }
-        ]
+        "image": ""
+      },
+      {
+        "id": 82,
+        "title": "Single-line text field",
+        "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.",
+        "image": ""
+      },
+      {
+        "id": 83,
+        "title": "Multi-line text field",
+        "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.",
+        "image": ""
+      },
+      {
+        "id": 84,
+        "title": "Full-width text field",
+        "description": "Full-width text fields are useful for more in-depth tasks.",
+        "image": ""
       }
     ]
   },

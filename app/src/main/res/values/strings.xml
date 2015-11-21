@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">Materialdoc.doc</string>
+
+    <!-- test strings start -->
+
+    <string name="test_small">Lorem ipsum</string>
+    <string name="test_medium">Lorem ipsum dolor sit amet, saperet minimum ei nam, ea dicat menandri pericula vel.</string>
+    <string name="test_large">Lorem ipsum dolor sit amet, saperet minimum ei nam, ea dicat menandri pericula vel. Modus dicam eligendi cu mea, et pri viris audiam disputando, an vix choro constituto comprehensam. Eu qui ignota accusam persecuti. Eu pro probo interesset, his solum utroque insolens ex.</string>
+
+    <!-- test strings end -->
+
+    <string name="app_name">materialdoc.doc</string>
     <string name="normal">normal</string>
     <string name="disabled">disabled</string>
     <string name="Button">Button</string>
