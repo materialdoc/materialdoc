@@ -25,6 +25,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
+        android:text="@string/Check_Box"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:enabled="false"
+        android:text="@string/Check_Box"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         android:checked="true"
         android:text="@string/Check_Box"/>
 
@@ -35,6 +48,21 @@
         android:checked="true"
         android:enabled="false"
         android:text="@string/Check_Box"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/Check_Box"
+        android:theme="@style/MyCheckBox"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:enabled="false"
+        android:text="@string/Check_Box"
+        android:theme="@style/MyCheckBox"/>
 
     <CheckBox
         android:layout_width="wrap_content"

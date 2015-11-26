@@ -21,36 +21,94 @@
         android:layout_marginBottom="8dp"
         android:text="@string/disabled"/>
 
-    <RadioButton
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:checked="true"
-        android:text="@string/Radio_Button"/>
+        android:checkedButton="@+id/rb1">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:checked="true"
-        android:enabled="false"
-        android:text="@string/Radio_Button"/>
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/Radio_Button"/>
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:checked="true"
-        android:text="@string/Radio_Button"
-        android:theme="@style/MyRadioButton"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/Radio_Button"/>
 
-    <RadioButton
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:checked="true"
+            android:enabled="false"
+            android:text="@string/Radio_Button"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:enabled="false"
+            android:text="@string/Radio_Button"/>
+
+    </RadioGroup>
+
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:checked="true"
-        android:enabled="false"
-        android:text="@string/Radio_Button"
-        android:theme="@style/MyRadioButton"/>
+        android:checkedButton="@+id/rb3">
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/Radio_Button"
+            android:theme="@style/MyRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/Radio_Button"
+            android:theme="@style/MyRadioButton"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:enabled="false"
+            android:text="@string/Radio_Button"
+            android:theme="@style/MyRadioButton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:checked="true"
+            android:enabled="false"
+            android:text="@string/Radio_Button"
+            android:theme="@style/MyRadioButton"/>
+
+    </RadioGroup>
 
 </GridLayout>
