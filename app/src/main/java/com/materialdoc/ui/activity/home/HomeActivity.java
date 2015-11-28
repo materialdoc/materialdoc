@@ -15,6 +15,7 @@ import com.materialdoc.ui.activity.CheckBoxActivity;
 import com.materialdoc.ui.activity.CircularProgressActivity;
 import com.materialdoc.ui.activity.FlatButtonActivity;
 import com.materialdoc.ui.activity.InputActivity;
+import com.materialdoc.ui.activity.InputFloatingLabelActivity;
 import com.materialdoc.ui.activity.InputFullWidthActivity;
 import com.materialdoc.ui.activity.InputMultiLineActivity;
 import com.materialdoc.ui.activity.InputSingleLineActivity;
@@ -143,7 +144,6 @@ public class HomeActivity extends AppCompatActivity {
         displayable.setId(item.id);
         displayable.setTitle(item.title);
         displayable.setDescription(item.description);
-        displayable.setImagePath(item.image);
         return displayable;
     }
 
@@ -190,6 +190,9 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case ItemID.INPUT_FIELD_FULL_WIDTH:
                 InputFullWidthActivity.start(this);
+                break;
+            case ItemID.INPUT_FIELD_FLOATING_LABEL:
+                InputFloatingLabelActivity.start(this);
                 break;
 
             //tab

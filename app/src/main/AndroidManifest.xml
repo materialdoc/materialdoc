@@ -76,6 +76,11 @@
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
+            android:name=".ui.activity.InputFloatingLabelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
             android:name=".ui.activity.tab.TabActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc.Tabs" />

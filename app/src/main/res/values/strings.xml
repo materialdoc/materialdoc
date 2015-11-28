@@ -26,4 +26,9 @@
     <string name="To">To</string>
     <string name="Subject">Subject</string>
     <string name="Message">Message</string>
+    <string name="Title">Title</string>
+    <string name="Price">Price</string>
+    <string name="Location">Location (optional)</string>
+    <string name="Description">Description</string>
+    <string name="Vintage">Vintage 50</string>
 </resources>

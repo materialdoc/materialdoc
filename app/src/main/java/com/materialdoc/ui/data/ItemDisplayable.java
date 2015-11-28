@@ -5,7 +5,6 @@ public class ItemDisplayable extends IViewType {
     private int id;
     private String title;
     private String description;
-    private String imagePath;
 
     public int getId() {
         return id;
@@ -29,14 +28,6 @@ public class ItemDisplayable extends IViewType {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
     }
 
 }

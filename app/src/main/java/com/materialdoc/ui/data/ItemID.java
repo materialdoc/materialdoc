@@ -20,6 +20,7 @@ public class ItemID {
     public static final int INPUT_FIELD_SINGLE_LINE = 81;
     public static final int INPUT_FIELD_MULTI_LINE = 82;
     public static final int INPUT_FIELD_FULL_WIDTH = 83;
+    public static final int INPUT_FIELD_FLOATING_LABEL = 84;
 
     //tabs
     public static final int TABS_TEXT_ONLY = 90;

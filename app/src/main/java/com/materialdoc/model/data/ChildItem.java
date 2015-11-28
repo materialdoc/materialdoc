@@ -13,6 +13,4 @@ public class ChildItem {
     @SerializedName("description")
     public String description;
 
-    @SerializedName("image")
-    public String image;
 }

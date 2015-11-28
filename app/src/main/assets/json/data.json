@@ -5,14 +5,12 @@
       {
         "id": 10,
         "title": "Raised Button",
-        "description": "A typically rectangular material button that lifts and displays ink reactions on press.",
-        "image": "images/raised_button.png"
+        "description": "A typically rectangular material button that lifts and displays ink reactions on press."
       },
       {
         "id": 20,
         "title": "Flat Button",
-        "description": "A button made of ink that displays ink reactions on press but does not lift.",
-        "image": ""
+        "description": "A button made of ink that displays ink reactions on press but does not lift."
       }
     ]
   },
@@ -22,14 +20,12 @@
       {
         "id": 30,
         "title": "Circular Progress",
-        "description": "Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator.",
-        "image": ""
+        "description": "Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator."
       },
       {
         "id": 40,
         "title": "Linear Progress",
-        "description": "A linear progress indicator should always fill from 0 to 100 and never decrease in value.",
-        "image": ""
+        "description": "A linear progress indicator should always fill from 0 to 100 and never decrease in value."
       }
     ]
   },
@@ -39,20 +35,17 @@
       {
         "id": 50,
         "title": "Check Box",
-        "description": "Checkboxes allow the user to select multiple options from a set.",
-        "image": ""
+        "description": "Checkboxes allow the user to select multiple options from a set."
       },
       {
         "id": 60,
         "title": "Radio Button",
-        "description": "Radio buttons allow the user to select one option from a set.",
-        "image": ""
+        "description": "Radio buttons allow the user to select one option from a set."
       },
       {
         "id": 70,
         "title": "Switch",
-        "description": "On/off switches toggle the state of a single settings option.",
-        "image": ""
+        "description": "On/off switches toggle the state of a single settings option."
       }
     ]
   },
@@ -62,26 +55,27 @@
       {
         "id": 80,
         "title": "Text field",
-        "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.",
-        "image": ""
+        "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion."
       },
       {
         "id": 81,
         "title": "Single-line text field",
-        "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.",
-        "image": ""
+        "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field."
       },
       {
         "id": 82,
         "title": "Multi-line text field",
-        "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.",
-        "image": ""
+        "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge."
       },
       {
         "id": 83,
         "title": "Full-width text field",
-        "description": "Full-width text fields are useful for more in-depth tasks.",
-        "image": ""
+        "description": "Full-width text fields are useful for more in-depth tasks."
+      },
+      {
+        "id": 84,
+        "title": "Floating labels",
+        "description": "When the user engages with the text input field, the floating inline labels move to float above the field."
       }
     ]
   },
@@ -91,26 +85,22 @@
       {
         "id": 90,
         "title": "Text only",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
-        "image": ""
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
       },
       {
         "id": 100,
         "title": "Icons only",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
-        "image": ""
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
       },
       {
         "id": 110,
         "title": "Icons and Text",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
-        "image": ""
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
       },
       {
         "id": 120,
         "title": "Styled",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.",
-        "image": ""
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
       }
     ]
   },
@@ -120,8 +110,7 @@
       {
         "id": 130,
         "title": "Rating Bar",
-        "description": "A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. ",
-        "image": ""
+        "description": "A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. "
       }
     ]
   }
