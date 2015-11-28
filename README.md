@@ -2,7 +2,7 @@
 
 This application includes all source code (layouts, styles, colors) of [materialdoc.com](http://www.materialdoc.com/) tutorials.
 
-You can [download apk](https://github.com/materialdoc/materialdoc/releases) and check how material components will look on different Android versions.
+You can [download apk](https://github.com/materialdoc/materialdoc/releases) or install from [Play Store](https://play.google.com/store/apps/details?id=com.materialdoc&hl=en) and check how material components will look on different Android versions.
 
 <img src="screenshots/screenshot-1.png" width="300" />
 <img src="screenshots/screenshot-2.png" width="300" />
