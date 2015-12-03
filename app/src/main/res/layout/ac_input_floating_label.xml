@@ -18,7 +18,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_x_large"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:hint="@string/Title"
             android:text="@string/Vintage"
             android:theme="@style/MyEditText" />

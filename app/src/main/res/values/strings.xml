@@ -31,4 +31,11 @@
     <string name="Location">Location (optional)</string>
     <string name="Description">Description</string>
     <string name="Vintage">Vintage 50</string>
+    <string name="Personal_info">Personal info</string>
+    <string name="First_name">First name</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Show_error">Show error</string>
+    <string name="Hide_error">Hide error</string>
+    <string name="First_name_is_required">First name is required</string>
+    <string name="Date_pattern">MM/DD/YYYY"</string>
 </resources>

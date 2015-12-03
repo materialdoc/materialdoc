@@ -15,6 +15,7 @@ import com.materialdoc.ui.activity.CheckBoxActivity;
 import com.materialdoc.ui.activity.CircularProgressActivity;
 import com.materialdoc.ui.activity.FlatButtonActivity;
 import com.materialdoc.ui.activity.InputActivity;
+import com.materialdoc.ui.activity.InputErrorLabelActivity;
 import com.materialdoc.ui.activity.InputFloatingLabelActivity;
 import com.materialdoc.ui.activity.InputFullWidthActivity;
 import com.materialdoc.ui.activity.InputMultiLineActivity;
@@ -193,6 +194,9 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case ItemID.INPUT_FIELD_FLOATING_LABEL:
                 InputFloatingLabelActivity.start(this);
+                break;
+            case ItemID.INPUT_FIELD_ERROR_LABEL:
+                InputErrorLabelActivity.start(this);
                 break;
 
             //tab

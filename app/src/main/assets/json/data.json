@@ -76,6 +76,11 @@
         "id": 84,
         "title": "Floating labels",
         "description": "When the user engages with the text input field, the floating inline labels move to float above the field."
+      },
+      {
+        "id": 85,
+        "title": "User input errors",
+        "description": "Help users fix input errors as soon as they are detected. Disable the submission of a form if errors are detected, and if detected only after form submission, clearly explain the error and how to fix it."
       }
     ]
   },

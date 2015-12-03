@@ -18,6 +18,6 @@ public class InputFloatingLabelActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_floating_label);
+        setContentView(R.layout.ac_input_floating_label);
     }
 }
