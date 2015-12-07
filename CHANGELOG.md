@@ -1,3 +1,9 @@
+### v1.2
+
+- Added Floating labels samples
+- Added User input errors samples
+- Added Alerts samples
+
 ### v1.1
 
 - Fixed UnsupportedOperationException

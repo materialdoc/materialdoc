@@ -7,11 +7,13 @@ You can [download apk](https://github.com/materialdoc/materialdoc/releases) or i
 <img src="screenshots/screenshot-1.png" width="300" />
 <img src="screenshots/screenshot-2.png" width="300" />
 
-Latest version **1.1** includes:
+Latest version **1.2** includes:
 
 - Buttons
   - Raised Button
   - Flat Button
+- Dialogs
+ - Alerts
 - Progress
   - Circular Progress
   - Linear Progress
@@ -19,12 +21,14 @@ Latest version **1.1** includes:
   - Check Box
   - Radio Button
   - Switch
+- Tabs
 - Text fields
   - Text field
   - Single-line text field
   - Multi-line text field
   - Full-width text field
-- Tabs
+  - Floating labels
+  - User input errors
 - Other
   - Rating Bar
 
