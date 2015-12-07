@@ -31,4 +31,7 @@ public class ItemID {
 
     //other
     public static final int RATING_BAR = 130;
+
+    //dialogs
+    public static final int ALERT = 140;
 }

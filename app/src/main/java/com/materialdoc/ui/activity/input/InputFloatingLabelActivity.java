@@ -1,4 +1,4 @@
-package com.materialdoc.ui.activity;
+package com.materialdoc.ui.activity.input;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,16 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.materialdoc.R;
 
-public class InputMultiLineActivity extends AppCompatActivity {
+public class InputFloatingLabelActivity extends AppCompatActivity {
 
     public static void start(@NonNull Activity activity) {
-        Intent intent = new Intent(activity, InputMultiLineActivity.class);
+        Intent intent = new Intent(activity, InputFloatingLabelActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_input_multi_line);
+        setContentView(R.layout.ac_input_floating_label);
     }
 }

@@ -11,15 +11,16 @@ import com.google.gson.Gson;
 import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
+import com.materialdoc.ui.activity.AlertDialogActivity;
 import com.materialdoc.ui.activity.CheckBoxActivity;
 import com.materialdoc.ui.activity.CircularProgressActivity;
 import com.materialdoc.ui.activity.FlatButtonActivity;
-import com.materialdoc.ui.activity.InputActivity;
-import com.materialdoc.ui.activity.InputErrorLabelActivity;
-import com.materialdoc.ui.activity.InputFloatingLabelActivity;
-import com.materialdoc.ui.activity.InputFullWidthActivity;
-import com.materialdoc.ui.activity.InputMultiLineActivity;
-import com.materialdoc.ui.activity.InputSingleLineActivity;
+import com.materialdoc.ui.activity.input.InputActivity;
+import com.materialdoc.ui.activity.input.InputErrorLabelActivity;
+import com.materialdoc.ui.activity.input.InputFloatingLabelActivity;
+import com.materialdoc.ui.activity.input.InputFullWidthActivity;
+import com.materialdoc.ui.activity.input.InputMultiLineActivity;
+import com.materialdoc.ui.activity.input.InputSingleLineActivity;
 import com.materialdoc.ui.activity.LinearProgressActivity;
 import com.materialdoc.ui.activity.RadioButtonActivity;
 import com.materialdoc.ui.activity.RaisedButtonActivity;
@@ -151,24 +152,18 @@ public class HomeActivity extends AppCompatActivity {
     private void handleDocumentClick(ItemDisplayable displayable) {
         int documentId = displayable.getId();
         switch (documentId) {
-
-            //Buttons
             case ItemID.RAISED_BUTTON:
                 RaisedButtonActivity.start(this);
                 break;
             case ItemID.FLAT_BUTTON:
                 FlatButtonActivity.start(this);
                 break;
-
-            //Progress
             case ItemID.CIRCULAR_PROGRESS:
                 CircularProgressActivity.start(this);
                 break;
             case ItemID.LINEAR_PROGRESS:
                 LinearProgressActivity.start(this);
                 break;
-
-            //Selection controls
             case ItemID.CHECK_BOX:
                 CheckBoxActivity.start(this);
                 break;
@@ -178,8 +173,6 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.SWITCH:
                 SwitchActivity.start(this);
                 break;
-
-            //edit fields
             case ItemID.INPUT_FIELD:
                 InputActivity.start(this);
                 break;
@@ -198,8 +191,6 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.INPUT_FIELD_ERROR_LABEL:
                 InputErrorLabelActivity.start(this);
                 break;
-
-            //tab
             case ItemID.TABS_TEXT_ONLY:
                 TabActivity.start(this);
                 break;
@@ -212,9 +203,9 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.TABS_STYLED:
                 TabStyledActivity.start(this);
                 break;
-
-
-            //other
+            case ItemID.ALERT:
+                AlertDialogActivity.start(this);
+                break;
             case ItemID.RATING_BAR:
                 RatingBarActivity.start(this);
                 break;

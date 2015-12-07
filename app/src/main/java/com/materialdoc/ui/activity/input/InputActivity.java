@@ -1,4 +1,4 @@
-package com.materialdoc.ui.activity;
+package com.materialdoc.ui.activity.input;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,16 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.materialdoc.R;
 
-public class InputSingleLineActivity extends AppCompatActivity {
+public class InputActivity extends AppCompatActivity {
 
     public static void start(@NonNull Activity activity) {
-        Intent intent = new Intent(activity, InputSingleLineActivity.class);
+        Intent intent = new Intent(activity, InputActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_input_single_line);
+        setContentView(R.layout.ac_input);
     }
 }

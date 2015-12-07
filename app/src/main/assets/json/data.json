@@ -110,6 +110,16 @@
     ]
   },
   {
+    "title": "Dialogs",
+    "itemsArr": [
+      {
+        "id": 140,
+        "title": "Alerts",
+        "description": "Alerts are urgent interruptions, requiring acknowledgement, that inform the user about a situation."
+      }
+    ]
+  },
+  {
     "title": "Other",
     "itemsArr": [
       {

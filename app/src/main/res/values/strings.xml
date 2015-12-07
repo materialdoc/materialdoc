@@ -38,4 +38,8 @@
     <string name="Hide_error">Hide error</string>
     <string name="First_name_is_required">First name is required</string>
     <string name="Date_pattern">MM/DD/YYYY"</string>
+    <string name="Show_dialog">Show dialog</string>
+    <string name="Show_styled_dialog">Show styled dialog</string>
+    <string name="dialog_title">Use Google\'s location service?</string>
+    <string name="dialog_message">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</string>
 </resources>
