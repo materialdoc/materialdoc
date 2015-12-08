@@ -99,7 +99,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 //            viewHolder.imageHolder.setVisibility(View.GONE);
 //        } else {
 //            String path = String.format("file:///android_asset/%s", displayable.getImagePath());
-//            L.d(String.format("Loading image: %s", path));
+//            Logger.d(String.format("Loading image: %s", path));
 //
 //            Picasso.with(context)
 //                    .load(path)

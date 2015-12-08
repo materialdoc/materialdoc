@@ -35,7 +35,7 @@ import com.materialdoc.ui.data.ItemDisplayable;
 import com.materialdoc.ui.data.ItemID;
 import com.materialdoc.ui.data.TitleDisplayable;
 import com.materialdoc.utils.IOUtils;
-import com.materialdoc.utils.L;
+import com.materialdoc.utils.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,6 +53,7 @@ import rx.schedulers.Schedulers;
 public class HomeActivity extends AppCompatActivity {
 
     private ItemAdapter mAdapter;
+    private static final String LOG_TAG = HomeActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +93,7 @@ public class HomeActivity extends AppCompatActivity {
                 }, new Action1<Throwable>() {
                     @Override
                     public void call(Throwable e) {
-                        L.e("Error during loading json data list", e);
+                        Logger.e(LOG_TAG, "Error during loading json data list", e);
                     }
                 });
     }
