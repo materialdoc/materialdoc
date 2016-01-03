@@ -114,6 +114,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
+        <activity
+            android:name=".ui.activity.CardViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.ConfirmationDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
     </application>
 
 </manifest>

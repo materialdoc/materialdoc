@@ -8,104 +8,34 @@
         "description": "A typically rectangular material button that lifts and displays ink reactions on press."
       },
       {
-        "id": 20,
+        "id": 11,
         "title": "Flat Button",
         "description": "A button made of ink that displays ink reactions on press but does not lift."
+      },
+      {
+        "id": 12,
+        "title": "Floating Action Button",
+        "description": "No Description"
       }
     ]
   },
   {
-    "title": "Progress",
+    "title": "Cards",
+    "itemsArr": [
+      {
+        "id": 20,
+        "title": "CardView",
+        "description": "A card is a piece of paper with unique related data that serves as an entry point to more detailed information."
+      }
+    ]
+  },
+  {
+    "title": "Chips",
     "itemsArr": [
       {
         "id": 30,
-        "title": "Circular Progress",
-        "description": "Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator."
-      },
-      {
-        "id": 40,
-        "title": "Linear Progress",
-        "description": "A linear progress indicator should always fill from 0 to 100 and never decrease in value."
-      }
-    ]
-  },
-  {
-    "title": "Selection controls",
-    "itemsArr": [
-      {
-        "id": 50,
-        "title": "Check Box",
-        "description": "Checkboxes allow the user to select multiple options from a set."
-      },
-      {
-        "id": 60,
-        "title": "Radio Button",
-        "description": "Radio buttons allow the user to select one option from a set."
-      },
-      {
-        "id": 70,
-        "title": "Switch",
-        "description": "On/off switches toggle the state of a single settings option."
-      }
-    ]
-  },
-  {
-    "title": "Text fields",
-    "itemsArr": [
-      {
-        "id": 80,
-        "title": "Text field",
-        "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion."
-      },
-      {
-        "id": 81,
-        "title": "Single-line text field",
-        "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field."
-      },
-      {
-        "id": 82,
-        "title": "Multi-line text field",
-        "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge."
-      },
-      {
-        "id": 83,
-        "title": "Full-width text field",
-        "description": "Full-width text fields are useful for more in-depth tasks."
-      },
-      {
-        "id": 84,
-        "title": "Floating labels",
-        "description": "When the user engages with the text input field, the floating inline labels move to float above the field."
-      },
-      {
-        "id": 85,
-        "title": "User input errors",
-        "description": "Help users fix input errors as soon as they are detected. Disable the submission of a form if errors are detected, and if detected only after form submission, clearly explain the error and how to fix it."
-      }
-    ]
-  },
-  {
-    "title": "Tabs",
-    "itemsArr": [
-      {
-        "id": 90,
-        "title": "Text only",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
-      },
-      {
-        "id": 100,
-        "title": "Icons only",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
-      },
-      {
-        "id": 110,
-        "title": "Icons and Text",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
-      },
-      {
-        "id": 120,
-        "title": "Styled",
-        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
+        "title": "No Title",
+        "description": "No Description"
       }
     ]
   },
@@ -113,9 +43,184 @@
     "title": "Dialogs",
     "itemsArr": [
       {
-        "id": 140,
+        "id": 40,
         "title": "Alerts",
         "description": "Alerts are urgent interruptions, requiring acknowledgement, that inform the user about a situation."
+      },
+      {
+        "id": 41,
+        "title": "Confirmation dialogs",
+        "description": "Confirmation dialogs require users to explicitly confirm their choice before an option is committed."
+      },
+      {
+        "id": 42,
+        "title": "Full-screen dialogs",
+        "description": "No Description"
+      }
+    ]
+  },
+  {
+    "title": "Menus",
+    "itemsArr": [
+      {
+        "id": 50,
+        "title": "Menu",
+        "description": "No Description"
+      }
+    ]
+  },
+  {
+    "title": "Pickers",
+    "itemsArr": [
+      {
+        "id": 60,
+        "title": "Picker",
+        "description": "No Description"
+      }
+    ]
+  },
+  {
+    "title": "Progress",
+    "itemsArr": [
+      {
+        "id": 70,
+        "title": "Circular Progress",
+        "description": "Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator."
+      },
+      {
+        "id": 71,
+        "title": "Linear Progress",
+        "description": "A linear progress indicator should always fill from 0 to 100 and never decrease in value."
+      },
+      {
+        "id": 72,
+        "title": "Swipe down to refresh",
+        "description": "No Description"
+      },
+      {
+        "id": 73,
+        "title": "Scroll up to load more",
+        "description": "No Description"
+      }
+    ]
+  },
+  {
+    "title": "Selection controls",
+    "itemsArr": [
+      {
+        "id": 80,
+        "title": "Check Box",
+        "description": "Checkboxes allow the user to select multiple options from a set."
+      },
+      {
+        "id": 81,
+        "title": "Radio Button",
+        "description": "Radio buttons allow the user to select one option from a set."
+      },
+      {
+        "id": 82,
+        "title": "Switch",
+        "description": "On/off switches toggle the state of a single settings option."
+      }
+    ]
+  },
+  {
+    "title": "Sliders",
+    "itemsArr": [
+      {
+        "id": 90,
+        "title": "Continuous slider",
+        "description": "No Description"
+      },
+      {
+        "id": 91,
+        "title": "Discrete slider",
+        "description": "No Description"
+      }
+    ]
+  },
+  {
+    "title": "Message alerts",
+    "itemsArr": [
+      {
+        "id": 100,
+        "title": "Snack Bar",
+        "description": "Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen."
+      },
+      {
+        "id": 101,
+        "title": "Toast",
+        "description": "Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen."
+      }
+    ]
+  },
+  {
+    "title": "Tabs",
+    "itemsArr": [
+      {
+        "id": 110,
+        "title": "Text only",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
+      },
+      {
+        "id": 111,
+        "title": "Icons only",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
+      },
+      {
+        "id": 112,
+        "title": "Icons and Text",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
+      },
+      {
+        "id": 113,
+        "title": "Styled",
+        "description": "Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets."
+      }
+    ]
+  },
+  {
+    "title": "Text fields",
+    "itemsArr": [
+      {
+        "id": 120,
+        "title": "Text field",
+        "description": "Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion."
+      },
+      {
+        "id": 121,
+        "title": "Single-line text field",
+        "description": "Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field."
+      },
+      {
+        "id": 122,
+        "title": "Multi-line text field",
+        "description": "Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge."
+      },
+      {
+        "id": 123,
+        "title": "Full-width text field",
+        "description": "Full-width text fields are useful for more in-depth tasks."
+      },
+      {
+        "id": 124,
+        "title": "Floating labels",
+        "description": "When the user engages with the text input field, the floating inline labels move to float above the field."
+      },
+      {
+        "id": 125,
+        "title": "User input errors",
+        "description": "Help users fix input errors as soon as they are detected. Disable the submission of a form if errors are detected, and if detected only after form submission, clearly explain the error and how to fix it."
+      }
+    ]
+  },
+  {
+    "title": "Toolbars",
+    "itemsArr": [
+      {
+        "id": 130,
+        "title": "Toolbar",
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
       }
     ]
   },
@@ -123,9 +228,9 @@
     "title": "Other",
     "itemsArr": [
       {
-        "id": 130,
+        "id": 140,
         "title": "Rating Bar",
-        "description": "A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. "
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
       }
     ]
   }

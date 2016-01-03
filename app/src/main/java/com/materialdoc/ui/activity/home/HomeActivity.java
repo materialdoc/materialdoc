@@ -12,20 +12,22 @@ import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
 import com.materialdoc.ui.activity.AlertDialogActivity;
+import com.materialdoc.ui.activity.CardViewActivity;
 import com.materialdoc.ui.activity.CheckBoxActivity;
 import com.materialdoc.ui.activity.CircularProgressActivity;
+import com.materialdoc.ui.activity.ConfirmationDialogActivity;
 import com.materialdoc.ui.activity.FlatButtonActivity;
+import com.materialdoc.ui.activity.LinearProgressActivity;
+import com.materialdoc.ui.activity.RadioButtonActivity;
+import com.materialdoc.ui.activity.RaisedButtonActivity;
+import com.materialdoc.ui.activity.RatingBarActivity;
+import com.materialdoc.ui.activity.SwitchActivity;
 import com.materialdoc.ui.activity.input.InputActivity;
 import com.materialdoc.ui.activity.input.InputErrorLabelActivity;
 import com.materialdoc.ui.activity.input.InputFloatingLabelActivity;
 import com.materialdoc.ui.activity.input.InputFullWidthActivity;
 import com.materialdoc.ui.activity.input.InputMultiLineActivity;
 import com.materialdoc.ui.activity.input.InputSingleLineActivity;
-import com.materialdoc.ui.activity.LinearProgressActivity;
-import com.materialdoc.ui.activity.RadioButtonActivity;
-import com.materialdoc.ui.activity.RaisedButtonActivity;
-import com.materialdoc.ui.activity.RatingBarActivity;
-import com.materialdoc.ui.activity.SwitchActivity;
 import com.materialdoc.ui.activity.tab.TabActivity;
 import com.materialdoc.ui.activity.tab.TabIconActivity;
 import com.materialdoc.ui.activity.tab.TabMultiActivity;
@@ -152,18 +154,57 @@ public class HomeActivity extends AppCompatActivity {
     private void handleDocumentClick(ItemDisplayable displayable) {
         int documentId = displayable.getId();
         switch (documentId) {
+
+            //buttons
             case ItemID.RAISED_BUTTON:
                 RaisedButtonActivity.start(this);
                 break;
             case ItemID.FLAT_BUTTON:
                 FlatButtonActivity.start(this);
                 break;
+            case ItemID.FLOATING_ACTION_BUTTONS:
+                break;
+
+            //cards
+            case ItemID.CARD_VIEW:
+                CardViewActivity.start(this);
+                break;
+
+            //chips
+            case ItemID.CHIP:
+                break;
+
+            //dialog
+            case ItemID.ALERT:
+                AlertDialogActivity.start(this);
+                break;
+            case ItemID.CONFIRMATION_DIALOGS:
+                ConfirmationDialogActivity.start(this);
+                break;
+            case ItemID.FULL_SCREEN_DIALOGS:
+                break;
+
+            //menu
+            case ItemID.MENU:
+                break;
+
+            //pickers
+            case ItemID.PICKER:
+                break;
+
+            //progress
             case ItemID.CIRCULAR_PROGRESS:
                 CircularProgressActivity.start(this);
                 break;
             case ItemID.LINEAR_PROGRESS:
                 LinearProgressActivity.start(this);
                 break;
+            case ItemID.SWIPE_DOWN_TO_REFRESH:
+                break;
+            case ItemID.SCROLL_UP_TO_LOAD_MORE:
+                break;
+
+            //selection controls
             case ItemID.CHECK_BOX:
                 CheckBoxActivity.start(this);
                 break;
@@ -173,6 +214,32 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.SWITCH:
                 SwitchActivity.start(this);
                 break;
+
+            //sliders
+            case ItemID.CONTINUOUS_SLIDER:
+                break;
+
+            //message alerts
+            case ItemID.SNACK_BAR:
+                break;
+            case ItemID.TOAST:
+                break;
+
+            //tabs
+            case ItemID.TABS_TEXT_ONLY:
+                TabActivity.start(this);
+                break;
+            case ItemID.TABS_ICON_ONLY:
+                TabIconActivity.start(this);
+                break;
+            case ItemID.TABS_ICON_AND_TEXT:
+                TabMultiActivity.start(this);
+                break;
+            case ItemID.TABS_STYLED:
+                TabStyledActivity.start(this);
+                break;
+
+            //text field
             case ItemID.INPUT_FIELD:
                 InputActivity.start(this);
                 break;
@@ -191,21 +258,12 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.INPUT_FIELD_ERROR_LABEL:
                 InputErrorLabelActivity.start(this);
                 break;
-            case ItemID.TABS_TEXT_ONLY:
-                TabActivity.start(this);
+
+            //toolbars
+            case ItemID.TOOLBAR:
                 break;
-            case ItemID.TABS_ICON_ONLY:
-                TabIconActivity.start(this);
-                break;
-            case ItemID.TABS_ICON_AND_TEXT:
-                TabMultiActivity.start(this);
-                break;
-            case ItemID.TABS_STYLED:
-                TabStyledActivity.start(this);
-                break;
-            case ItemID.ALERT:
-                AlertDialogActivity.start(this);
-                break;
+
+            //other
             case ItemID.RATING_BAR:
                 RatingBarActivity.start(this);
                 break;
