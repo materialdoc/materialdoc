@@ -43,7 +43,7 @@ public class ConfirmationDialogActivity extends AppCompatActivity {
 
     public void showSingleChoiceDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(ConfirmationDialogActivity.this);
-        builder.setTitle(R.string.dialog_title);
+        builder.setTitle(R.string.confirmation_dialog_title);
 
         //list of items
         String[] items = getResources().getStringArray(R.array.ringtone_list);
@@ -80,7 +80,7 @@ public class ConfirmationDialogActivity extends AppCompatActivity {
 
     public void showStyledMultiChoiceDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.MyConfirmationDialogTheme);
-        builder.setTitle(R.string.dialog_title);
+        builder.setTitle(R.string.confirmation_dialog_title);
 
         //list of items
         String[] items = getResources().getStringArray(R.array.ringtone_list);
