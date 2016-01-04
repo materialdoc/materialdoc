@@ -45,6 +45,9 @@
     <string name="dialog_title">Use Google\'s location service?</string>
     <string name="confirmation_dialog_title">Phone ringtone</string>
     <string name="dialog_message">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</string>
+    <string name="show_snack_bar">show snack bar</string>
+    <string name="hide_snack_bar">hide snack bar</string>
+    <string name="show_styled_snack_bar">show styled stack bar</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
