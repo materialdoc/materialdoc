@@ -124,8 +124,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
+        <!--<activity-->
+            <!--android:name=".ui.activity.SnackBarActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.MaterialDoc" />-->
+
         <activity
-            android:name=".ui.activity.SnackBarActivity"
+            android:name=".ui.activity.ToastActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 

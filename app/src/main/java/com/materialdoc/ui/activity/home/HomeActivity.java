@@ -21,8 +21,8 @@ import com.materialdoc.ui.activity.LinearProgressActivity;
 import com.materialdoc.ui.activity.RadioButtonActivity;
 import com.materialdoc.ui.activity.RaisedButtonActivity;
 import com.materialdoc.ui.activity.RatingBarActivity;
-import com.materialdoc.ui.activity.SnackBarActivity;
 import com.materialdoc.ui.activity.SwitchActivity;
+import com.materialdoc.ui.activity.ToastActivity;
 import com.materialdoc.ui.activity.input.InputActivity;
 import com.materialdoc.ui.activity.input.InputErrorLabelActivity;
 import com.materialdoc.ui.activity.input.InputFloatingLabelActivity;
@@ -222,9 +222,10 @@ public class HomeActivity extends AppCompatActivity {
 
             //message alerts
             case ItemID.SNACK_BAR:
-                SnackBarActivity.start(this);
+//                SnackBarActivity.start(this);
                 break;
             case ItemID.TOAST:
+                ToastActivity.start(this);
                 break;
 
             //tabs

@@ -48,6 +48,9 @@
     <string name="show_snack_bar">show snack bar</string>
     <string name="hide_snack_bar">hide snack bar</string>
     <string name="show_styled_snack_bar">show styled stack bar</string>
+    <string name="show_toast">show toast</string>
+    <string name="show_styled_toast">show styled toast</string>
+    <string name="hide_toast">hide toast</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
