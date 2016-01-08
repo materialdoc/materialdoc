@@ -167,4 +167,8 @@
         <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
     </style>
 
+    <style name="MyFloatingButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
 </resources>

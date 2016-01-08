@@ -159,6 +159,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FullScreen.Petrol" />
 
+        <activity
+            android:name=".ui.activity.FloatingButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
+import com.materialdoc.ui.activity.FloatingButtonActivity;
 import com.materialdoc.ui.activity.BlankToolbarActivity;
 import com.materialdoc.ui.activity.AlertDialogActivity;
 import com.materialdoc.ui.activity.BackToolbarActivity;
@@ -169,6 +170,7 @@ public class HomeActivity extends AppCompatActivity {
                 FlatButtonActivity.start(this);
                 break;
             case ItemID.FLOATING_ACTION_BUTTONS:
+                FloatingButtonActivity.start(this);
                 break;
 
             //cards
