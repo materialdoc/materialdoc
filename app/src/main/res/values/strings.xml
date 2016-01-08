@@ -51,6 +51,10 @@
     <string name="show_toast">show toast</string>
     <string name="show_styled_toast">show styled toast</string>
     <string name="hide_toast">hide toast</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
 
     <string-array name="ringtone_list">
         <item>None</item>

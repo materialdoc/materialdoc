@@ -11,18 +11,23 @@ import com.google.gson.Gson;
 import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
 import com.materialdoc.model.data.ParentItem;
+import com.materialdoc.ui.activity.BlankToolbarActivity;
 import com.materialdoc.ui.activity.AlertDialogActivity;
+import com.materialdoc.ui.activity.BackToolbarActivity;
 import com.materialdoc.ui.activity.CardViewActivity;
 import com.materialdoc.ui.activity.CheckBoxActivity;
 import com.materialdoc.ui.activity.CircularProgressActivity;
 import com.materialdoc.ui.activity.ConfirmationDialogActivity;
+import com.materialdoc.ui.activity.DefaultToolbarActivity;
 import com.materialdoc.ui.activity.FlatButtonActivity;
+import com.materialdoc.ui.activity.IconsToolbarActivity;
 import com.materialdoc.ui.activity.LinearProgressActivity;
 import com.materialdoc.ui.activity.RadioButtonActivity;
 import com.materialdoc.ui.activity.RaisedButtonActivity;
 import com.materialdoc.ui.activity.RatingBarActivity;
 import com.materialdoc.ui.activity.SwitchActivity;
 import com.materialdoc.ui.activity.ToastActivity;
+import com.materialdoc.ui.activity.StyledToolbarActivity;
 import com.materialdoc.ui.activity.input.InputActivity;
 import com.materialdoc.ui.activity.input.InputErrorLabelActivity;
 import com.materialdoc.ui.activity.input.InputFloatingLabelActivity;
@@ -263,7 +268,20 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             //toolbars
-            case ItemID.TOOLBAR:
+            case ItemID.TOOLBAR_DEFAULT:
+                DefaultToolbarActivity.start(this);
+                break;
+            case ItemID.TOOLBAR_STYLED:
+                StyledToolbarActivity.start(this);
+                break;
+            case ItemID.TOOLBAR_ICONS:
+                IconsToolbarActivity.start(this);
+                break;
+            case ItemID.TOOLBAR_BACK:
+                BackToolbarActivity.start(this);
+                break;
+            case ItemID.TOOLBAR_BLANK:
+                BlankToolbarActivity.start(this);
                 break;
 
             //other

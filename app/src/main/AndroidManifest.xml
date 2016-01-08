@@ -125,14 +125,39 @@
             android:theme="@style/Theme.MaterialDoc" />
 
         <!--<activity-->
-            <!--android:name=".ui.activity.SnackBarActivity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@style/Theme.MaterialDoc" />-->
+        <!--android:name=".ui.activity.SnackBarActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/Theme.MaterialDoc" />-->
 
         <activity
             android:name=".ui.activity.ToastActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.DefaultToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen" />
+
+        <activity
+            android:name=".ui.activity.StyledToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.IconsToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.BackToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.BlankToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
 
     </application>
 

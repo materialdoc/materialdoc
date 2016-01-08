@@ -219,7 +219,27 @@
     "itemsArr": [
       {
         "id": 130,
-        "title": "Toolbar",
+        "title": "Default Toolbar",
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
+      },
+      {
+        "id": 131,
+        "title": "Styled Toolbar",
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
+      },
+      {
+        "id": 132,
+        "title": "Icons Toolbar",
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
+      },
+      {
+        "id": 133,
+        "title": "Back Toolbar",
+        "description": "Toolbars appear a step above the sheet of paper affected by their actions."
+      },
+      {
+        "id": 134,
+        "title": "Blank Toolbar",
         "description": "Toolbars appear a step above the sheet of paper affected by their actions."
       }
     ]

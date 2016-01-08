@@ -4,6 +4,15 @@
         <item name="android:windowBackground">@color/bg_color</item>
     </style>
 
+    <style name="Theme.FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+
+    <style name="Theme.FullScreen.Petrol" parent="Theme.FullScreen">
+        <item name="colorPrimaryDark">@color/blue_200</item>
+        <item name="colorPrimary">@color/blue_100</item>
+    </style>
+
     <style name="MyButton" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/indigo</item>
         <item name="colorButtonNormal">@color/pink</item>
@@ -47,7 +56,9 @@
     <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
         <item name="android:padding">20dp</item>
         <item name="android:background">@null</item>
-        <item name="android:textSize" tools:ignore="PrivateResource">@dimen/abc_text_size_subhead_material</item>
+        <item name="android:textSize" tools:ignore="PrivateResource">
+            @dimen/abc_text_size_subhead_material
+        </item>
     </style>
 
     <style name="RatingBar" parent="Theme.AppCompat">
@@ -116,6 +127,44 @@
         <item name="android:textColorPrimary">@android:color/white</item>
         <!--dialog background-->
         <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
+    <style name="ToolbarTextAppearance">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-condensed</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowColor">?colorAccent</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MyToolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+    </style>
+
+    <style name="BackMyToolbar">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
+    </style>
+
+    <style name="MyToolbarBlank">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+        <item name="titleMarginTop">?actionBarSize</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
     </style>
 
 </resources>

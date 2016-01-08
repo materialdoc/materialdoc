@@ -57,7 +57,11 @@ public class ItemID {
     public static final int INPUT_FIELD_ERROR_LABEL = 125;
 
     //toolbars
-    public static final int TOOLBAR = 130;
+    public static final int TOOLBAR_DEFAULT = 130;
+    public static final int TOOLBAR_STYLED = 131;
+    public static final int TOOLBAR_ICONS = 132;
+    public static final int TOOLBAR_BACK = 133;
+    public static final int TOOLBAR_BLANK = 134;
 
     //other
     public static final int RATING_BAR = 140;
