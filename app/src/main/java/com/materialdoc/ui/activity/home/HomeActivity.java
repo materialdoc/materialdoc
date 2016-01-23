@@ -23,10 +23,12 @@ import com.materialdoc.ui.activity.FlatButtonActivity;
 import com.materialdoc.ui.activity.FloatingButtonActivity;
 import com.materialdoc.ui.activity.IconsToolbarActivity;
 import com.materialdoc.ui.activity.LinearProgressActivity;
+import com.materialdoc.ui.activity.MenuActivity;
 import com.materialdoc.ui.activity.RadioButtonActivity;
 import com.materialdoc.ui.activity.RaisedButtonActivity;
 import com.materialdoc.ui.activity.RatingBarActivity;
 import com.materialdoc.ui.activity.SnackBarActivity;
+import com.materialdoc.ui.activity.StyledMenuActivity;
 import com.materialdoc.ui.activity.StyledToolbarActivity;
 import com.materialdoc.ui.activity.SwitchActivity;
 import com.materialdoc.ui.activity.ToastActivity;
@@ -195,6 +197,10 @@ public class HomeActivity extends AppCompatActivity {
 
             //menu
             case ItemID.MENU:
+                MenuActivity.start(this);
+                break;
+            case ItemID.MENU_STYLED:
+                StyledMenuActivity.start(this);
                 break;
 
             //pickers

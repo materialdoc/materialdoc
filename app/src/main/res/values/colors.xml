@@ -21,4 +21,7 @@
     <color name="violet_100">#3F51B5</color>
     <color name="violet_200">#1A237E</color>
 
+    <color name="red">#ef1010</color>
+    <color name="yellow">#f4d301</color>
+
 </resources>

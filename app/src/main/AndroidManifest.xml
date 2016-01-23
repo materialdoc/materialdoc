@@ -164,6 +164,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc" />
 
+        <activity
+            android:name=".ui.activity.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.StyledMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen" />
 
     </application>
 

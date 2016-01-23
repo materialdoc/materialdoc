@@ -171,4 +171,11 @@
         <item name="colorAccent">@color/pink</item>
     </style>
 
+    <style name="MyPopupTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">@color/red </item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/red</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/yellow</item>
+        <item name="android:textColorPrimary">@color/yellow</item>
+    </style>
+
 </resources>

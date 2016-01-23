@@ -65,7 +65,12 @@
       {
         "id": 50,
         "title": "Menu",
-        "description": "No Description"
+        "description": "Menus allow users to take an action by selecting from a list of choices revealed upon opening a temporary, new sheet of material."
+      },
+      {
+        "id": 51,
+        "title": "Styled Menu",
+        "description": "Menus allow users to take an action by selecting from a list of choices revealed upon opening a temporary, new sheet of material."
       }
     ]
   },

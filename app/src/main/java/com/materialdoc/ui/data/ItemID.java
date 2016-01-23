@@ -20,6 +20,7 @@ public class ItemID {
 
     //menu
     public static final int MENU = 50;
+    public static final int MENU_STYLED = 51;
 
     //pickers
     public static final int PICKER = 60;
