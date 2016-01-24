@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Indigo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+        <item name="colorAccent">@color/indigo_accent</item>
+    </style>
+    <style name="Theme.Orange" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange_dark</item>
+        <item name="colorAccent">@color/orange_accent</item>
+    </style>
+    <style name="Theme.Green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+    </style>
+</resources>

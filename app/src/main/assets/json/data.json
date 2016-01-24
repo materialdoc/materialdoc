@@ -250,10 +250,20 @@
     ]
   },
   {
-    "title": "Other",
+    "title": "Theme",
     "itemsArr": [
       {
         "id": 140,
+        "title": "App colors",
+        "description": "Material appcompat provide usefule color attributes."
+      }
+    ]
+  },
+  {
+    "title": "Other",
+    "itemsArr": [
+      {
+        "id": 141,
         "title": "Rating Bar",
         "description": "Toolbars appear a step above the sheet of paper affected by their actions."
       }

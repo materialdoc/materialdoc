@@ -31,6 +31,7 @@ import com.materialdoc.ui.activity.SnackBarActivity;
 import com.materialdoc.ui.activity.StyledMenuActivity;
 import com.materialdoc.ui.activity.StyledToolbarActivity;
 import com.materialdoc.ui.activity.SwitchActivity;
+import com.materialdoc.ui.activity.theme.ThemeActivity;
 import com.materialdoc.ui.activity.ToastActivity;
 import com.materialdoc.ui.activity.input.InputActivity;
 import com.materialdoc.ui.activity.input.InputErrorLabelActivity;
@@ -291,6 +292,11 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case ItemID.TOOLBAR_BLANK:
                 BlankToolbarActivity.start(this);
+                break;
+
+            //theme
+            case ItemID.APP_COLORS:
+                ThemeActivity.start(this);
                 break;
 
             //other

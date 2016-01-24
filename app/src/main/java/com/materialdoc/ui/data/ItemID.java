@@ -64,6 +64,9 @@ public class ItemID {
     public static final int TOOLBAR_BACK = 133;
     public static final int TOOLBAR_BLANK = 134;
 
+    //theme
+    public static final int APP_COLORS = 140;
+
     //other
-    public static final int RATING_BAR = 140;
+    public static final int RATING_BAR = 141;
 }

@@ -14,6 +14,16 @@
 
     <color name="pink">#FF4081</color>
     <color name="indigo">#3F51B5</color>
+    <color name="orange">#FF9800</color>
+    <color name="green">#4CAF50</color>
+
+    <color name="indigo_dark">#1A237E</color>
+    <color name="orange_dark">#E65100</color>
+    <color name="green_dark">#1B5E20</color>
+
+    <color name="indigo_accent">#00897B</color>
+    <color name="orange_accent">#6D4C41</color>
+    <color name="green_accent">#C0CA33</color>
 
     <color name="blue_100">#00BCD4</color>
     <color name="blue_200">#00A0B4</color>

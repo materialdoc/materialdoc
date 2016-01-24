@@ -58,6 +58,9 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_feedback">feedback</string>
     <string name="action_leave">leave</string>
+    <string name="theme_indigo">Theme indigo</string>
+    <string name="theme_orange">Theme orange</string>
+    <string name="theme_green">Theme green</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
