@@ -21,6 +21,7 @@
     <string name="buffered">buffered</string>
     <string name="indeterminate_and_determinate">indeterminate and determinate</string>
     <string name="Check_Box">Check Box</string>
+    <string name="Switch">Switch</string>
     <string name="Radio_Button">Radio Button</string>
     <string name="Hint_text">Hint text</string>
     <string name="To">To</string>
