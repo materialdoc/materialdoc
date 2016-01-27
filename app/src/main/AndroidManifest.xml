@@ -9,7 +9,7 @@
         android:theme="@style/Theme.MaterialDoc">
         <activity
             android:name=".ui.activity.home.HomeActivity"
-            android:label="@string/app_name"
+            android:label="@string/app_label"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialDoc">
             <intent-filter>

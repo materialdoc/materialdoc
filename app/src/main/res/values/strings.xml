@@ -8,7 +8,8 @@
 
     <!-- test strings end -->
 
-    <string name="app_name">materialdoc.doc</string>
+    <string name="app_name">materialdoc</string>
+    <string name="app_label">materialdoc.doc</string>
     <string name="normal">normal</string>
     <string name="disabled">disabled</string>
     <string name="Button">Button</string>
