@@ -170,6 +170,26 @@
             android:theme="@style/Theme.MaterialDoc" />
 
         <activity
+            android:name=".ui.activity.theme.ThemeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.theme.ThemeActivityIndigo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Indigo" />
+
+        <activity
+            android:name=".ui.activity.theme.ThemeActivityOrange"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Orange" />
+
+        <activity
+            android:name=".ui.activity.theme.ThemeActivityGreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Green" />
+
+        <activity
             android:name=".ui.activity.StyledMenuActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FullScreen" />

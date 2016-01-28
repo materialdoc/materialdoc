@@ -22,6 +22,7 @@
     <string name="buffered">buffered</string>
     <string name="indeterminate_and_determinate">indeterminate and determinate</string>
     <string name="Check_Box">Check Box</string>
+    <string name="Switch">Switch</string>
     <string name="Radio_Button">Radio Button</string>
     <string name="Hint_text">Hint text</string>
     <string name="To">To</string>
@@ -59,6 +60,9 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_feedback">feedback</string>
     <string name="action_leave">leave</string>
+    <string name="theme_indigo">Theme indigo</string>
+    <string name="theme_orange">Theme orange</string>
+    <string name="theme_green">Theme green</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
