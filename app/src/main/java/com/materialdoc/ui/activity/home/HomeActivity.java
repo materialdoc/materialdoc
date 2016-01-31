@@ -2,6 +2,7 @@ package com.materialdoc.ui.activity.home;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -54,6 +55,14 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.ac_home);
         initRecycleView();
         loadData();
+        initActionBar();
+    }
+
+    private void initActionBar() {
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null) {
+            actionBar.setTitle(R.string.app_label);
+        }
     }
 
     private void initRecycleView() {
