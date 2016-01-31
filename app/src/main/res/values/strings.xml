@@ -57,8 +57,8 @@
     <string name="search">Search</string>
     <string name="favorite">Favorite</string>
     <string name="action_refresh">Refresh</string>
-    <string name="action_feedback">feedback</string>
-    <string name="action_leave">leave</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_leave">Leave</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
