@@ -7,6 +7,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import android.text.TextUtils;
 import com.google.gson.Gson;
 import com.materialdoc.R;
 import com.materialdoc.model.data.ChildItem;
@@ -100,7 +101,7 @@ public class HomeActivity extends AppCompatActivity {
                 .subscribe(new Action1<List<IViewType>>() {
                     @Override
                     public void call(List<IViewType> dataList) {
-                        mAdapter.setData(dataList);
+                        mAdapter.setData(removeEmptyItems(dataList));
                     }
                 }, new Action1<Throwable>() {
                     @Override
@@ -108,6 +109,24 @@ public class HomeActivity extends AppCompatActivity {
                         L.e("Error during loading json data list", e);
                     }
                 });
+    }
+
+    @NonNull
+    private List<IViewType> removeEmptyItems(@NonNull List<IViewType> dataList) {
+        List<IViewType> resultList = new ArrayList<>();
+        for (IViewType type : dataList) {
+
+            if (type instanceof TitleDisplayable && !TextUtils.isEmpty(((TitleDisplayable) type).getTitle())) {
+                resultList.add(type);
+
+            } else if (type instanceof ItemDisplayable &&
+                    !TextUtils.isEmpty(((ItemDisplayable) type).getTitle()) &&
+                    !TextUtils.isEmpty(((ItemDisplayable) type).getDescription())) {
+                resultList.add(type);
+            }
+        }
+
+        return resultList;
     }
 
     @NonNull

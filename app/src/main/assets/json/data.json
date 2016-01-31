@@ -30,12 +30,12 @@
     ]
   },
   {
-    "title": "Chips",
+    "title": "",
     "itemsArr": [
       {
         "id": 30,
-        "title": "No Title",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       }
     ]
   },
@@ -54,8 +54,8 @@
       },
       {
         "id": 42,
-        "title": "Full-screen dialogs",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       }
     ]
   },
@@ -75,12 +75,12 @@
     ]
   },
   {
-    "title": "Pickers",
+    "title": "",
     "itemsArr": [
       {
         "id": 60,
-        "title": "Picker",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       }
     ]
   },
@@ -99,13 +99,13 @@
       },
       {
         "id": 72,
-        "title": "Swipe down to refresh",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       },
       {
         "id": 73,
-        "title": "Scroll up to load more",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       }
     ]
   },
@@ -130,17 +130,17 @@
     ]
   },
   {
-    "title": "Sliders",
+    "title": "",
     "itemsArr": [
       {
         "id": 90,
-        "title": "Continuous slider",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       },
       {
         "id": 91,
-        "title": "Discrete slider",
-        "description": "No Description"
+        "title": "",
+        "description": ""
       }
     ]
   },
