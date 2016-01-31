@@ -75,12 +75,12 @@
     ]
   },
   {
-    "title": "",
+    "title": "Pickers",
     "itemsArr": [
       {
         "id": 60,
-        "title": "",
-        "description": ""
+        "title": "Date Picker",
+        "description": "A dialog picker is used to select a single date on mobile. The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight."
       }
     ]
   },
