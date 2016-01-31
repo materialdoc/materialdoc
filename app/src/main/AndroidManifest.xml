@@ -172,10 +172,15 @@
         <activity
             android:name=".ui.activity.StyledMenuActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.FullScreen" />
+            android:theme="@style/Theme.FullScreen"/>
 
         <activity
                 android:name=".ui.activity.DatePickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.MaterialDoc"/>
+
+        <activity
+                android:name=".ui.activity.TimePickerActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/Theme.MaterialDoc" />
 

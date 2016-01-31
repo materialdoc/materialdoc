@@ -187,4 +187,13 @@
         <item name="android:windowBackground">@drawable/background_dialog</item>
     </style>
 
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/pink</item>
+        <item name="textColorAlertDialogListItem">@color/indigo</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="android:textColorPrimary">@color/indigo</item>
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+    </style>
+
 </resources>

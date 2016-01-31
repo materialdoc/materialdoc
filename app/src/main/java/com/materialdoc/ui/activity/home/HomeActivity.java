@@ -215,6 +215,9 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.DATE_PICKER:
                 DatePickerActivity.start(this);
                 break;
+            case ItemID.TIME_PICKER:
+                TimePickerActivity.start(this);
+                break;
 
             //progress
             case ItemID.CIRCULAR_PROGRESS:

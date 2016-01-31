@@ -81,6 +81,11 @@
         "id": 60,
         "title": "Date Picker",
         "description": "A dialog picker is used to select a single date on mobile. The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight."
+      },
+      {
+        "id": 61,
+        "title": "Time Picker",
+        "description": "A time picker adjusts to a user’s preferred time setting, i.e. the 12-hour or 24-hour format. A dialog picker is used to select a single time (hours:minutes) on mobile."
       }
     ]
   },
