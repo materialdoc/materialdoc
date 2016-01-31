@@ -23,7 +23,8 @@ public class ItemID {
     public static final int MENU_STYLED = 51;
 
     //pickers
-    public static final int PICKER = 60;
+    public static final int DATE_PICKER = 60;
+    public static final int TIME_PICKER = 61;
 
     //progress
     public static final int CIRCULAR_PROGRESS = 70;

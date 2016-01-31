@@ -59,6 +59,9 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_feedback">feedback</string>
     <string name="action_leave">leave</string>
+    <string name="show_date_picker">Show Date Picker</string>
+    <string name="hide_date_picker">Hide Date Picker</string>
+    <string name="show_styled_date_picker">Show Styled Date Picker</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
