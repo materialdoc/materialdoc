@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="petrol_100">#00BAD1</color>
+    <color name="petrol_200">#008192</color>
+
     <color name="bg_color">#F9F9F9</color>
     <color name="color_white_semitransparent">#80ffffff</color>
 
