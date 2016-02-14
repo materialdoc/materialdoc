@@ -1,3 +1,18 @@
+### v1.4
+- Updated app icon
+- Updated app colors
+- Menu
+- Date picker sample
+- Time picker sample
+
+### v1.3
+- Snackbar
+- Toast
+- Confirmation dialogs
+- Cards
+- Toolbars
+- Floating Action Button
+
 ### v1.2
 
 - Added Floating labels samples

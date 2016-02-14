@@ -12,8 +12,14 @@ Latest version **1.2** includes:
 - Buttons
   - Raised Button
   - Flat Button
+  - Floating Action Button
 - Dialogs
  - Alerts
+ - Confirmation dialogs
+- Menus
+- Pickers
+ - Date Picker
+ - Time Picker
 - Progress
   - Circular Progress
   - Linear Progress
@@ -21,6 +27,7 @@ Latest version **1.2** includes:
   - Check Box
   - Radio Button
   - Switch
+- Snackbars & Toasts
 - Tabs
 - Text fields
   - Text field
@@ -29,6 +36,7 @@ Latest version **1.2** includes:
   - Full-width text field
   - Floating labels
   - User input errors
+- Toolbars
 - Other
   - Rating Bar
 
