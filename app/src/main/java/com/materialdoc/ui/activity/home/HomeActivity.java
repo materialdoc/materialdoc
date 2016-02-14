@@ -227,6 +227,7 @@ public class HomeActivity extends AppCompatActivity {
                 LinearProgressActivity.start(this);
                 break;
             case ItemID.SWIPE_DOWN_TO_REFRESH:
+                SwipeToRefreshActivity.start(this);
                 break;
             case ItemID.SCROLL_UP_TO_LOAD_MORE:
                 break;
