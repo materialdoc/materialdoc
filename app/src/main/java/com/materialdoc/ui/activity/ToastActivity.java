@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -61,7 +62,7 @@ public class ToastActivity extends AppCompatActivity {
         TextView textView = (TextView) mToast.getView().findViewById(android.R.id.message);
         textView.setTextColor(Color.YELLOW);
 
-        mToast.getView().setBackgroundColor(getResources().getColor(R.color.indigo));
+        mToast.getView().setBackgroundColor(ContextCompat.getColor(this,R.color.indigo));
         mToast.show();
     }
 

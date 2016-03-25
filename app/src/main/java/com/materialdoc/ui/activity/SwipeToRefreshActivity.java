@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import com.materialdoc.R;
@@ -27,7 +28,7 @@ public class SwipeToRefreshActivity extends AppCompatActivity {
 
     private void initViews() {
         mRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
-        mRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.petrol_100));
+        mRefreshLayout.setColorSchemeColors(ContextCompat.getColor(this,R.color.petrol_100));
         mRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

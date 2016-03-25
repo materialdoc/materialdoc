@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -60,7 +61,7 @@ public class SnackBarActivity extends AppCompatActivity {
 
     private void showStyledSnackbar() {
         mSnackbar = Snackbar.make(findViewById(R.id.coordinatorLayout), "No network connection.", Snackbar.LENGTH_SHORT);
-        mSnackbar.setActionTextColor(getResources().getColor(R.color.indigo));
+        mSnackbar.setActionTextColor(ContextCompat.getColor(this,R.color.indigo));
         mSnackbar.setAction("Retry", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,9 +73,9 @@ public class SnackBarActivity extends AppCompatActivity {
         int snackbarTextId = android.support.design.R.id.snackbar_text;
 
         TextView textView = (TextView) snackbarView.findViewById(snackbarTextId);
-        textView.setTextColor(getResources().getColor(R.color.indigo));
+        textView.setTextColor(ContextCompat.getColor(this,R.color.indigo));
 
-        snackbarView.setBackgroundColor(getResources().getColor(R.color.pink));
+        snackbarView.setBackgroundColor(ContextCompat.getColor(this,R.color.pink));
         mSnackbar.show();
     }
 

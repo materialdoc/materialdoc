@@ -188,6 +188,10 @@
                 android:name=".ui.activity.SwipeToRefreshActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/Theme.MaterialDoc" />
+        <activity
+            android:name=".ui.activity.BottomSheetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
 
     </application>
 
