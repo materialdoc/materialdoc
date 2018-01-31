@@ -91,6 +91,7 @@ public class HomeActivity extends AppCompatActivity {
                     @Override
                     public void call(List<IViewType> dataList) {
                         mAdapter.setData(removeEmptyItems(dataList));
+                        mAdapter.notifyDataSetChanged();
                     }
                 }, new Action1<Throwable>() {
                     @Override
