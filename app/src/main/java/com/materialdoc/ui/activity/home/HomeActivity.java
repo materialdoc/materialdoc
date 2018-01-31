@@ -311,6 +311,9 @@ public class HomeActivity extends AppCompatActivity {
             case ItemID.RATING_BAR:
                 RatingBarActivity.start(this);
                 break;
+            case ItemID.BOTTOM_SHEET:
+                BottomSheetActivity.start(this);
+                break;
         }
     }
 }

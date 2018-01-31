@@ -261,6 +261,11 @@
         "id": 140,
         "title": "Rating Bar",
         "description": "Toolbars appear a step above the sheet of paper affected by their actions."
+      },
+      {
+        "id": 141,
+        "title": "Bottom Sheet",
+        "description": "Demo of Android bottom sheet"
       }
     ]
   }

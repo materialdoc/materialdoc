@@ -67,4 +67,5 @@ public class ItemID {
 
     //other
     public static final int RATING_BAR = 140;
+    public static final int BOTTOM_SHEET = 141;
 }

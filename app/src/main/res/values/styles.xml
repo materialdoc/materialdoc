@@ -156,14 +156,14 @@
 
     <style name="BackMyToolbar">
         <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
-        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
         <item name="android:background">?colorPrimary</item>
         <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
     </style>
 
     <style name="MyToolbarBlank">
         <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
-        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
         <item name="titleMarginTop">?actionBarSize</item>
         <item name="android:background">?colorPrimary</item>
         <item name="android:elevation" tools:targetApi="lollipop">4dp</item>
@@ -197,5 +197,12 @@
         <item name="android:textColorPrimary">@color/indigo</item>
         <item name="android:windowBackground">@drawable/background_dialog</item>
     </style>
-
+    <style name="BottomSheetStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorAccent">@color/blue_100</item>
+        <item name="android:background">@color/violet_100</item>
+    </style>
+    <style name="BottomSheetButtonStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlHighlight">@color/indigo</item>
+        <item name="colorButtonNormal">@color/petrol_100</item>
+    </style>
 </resources>

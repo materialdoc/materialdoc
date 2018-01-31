@@ -64,6 +64,10 @@
     <string name="show_styled_date_picker">Show Styled Date Picker</string>
     <string name="show_time_picker">Show Time Picker</string>
     <string name="show_styled_time_picker">Show Styled Time Picker</string>
+    <string name="show_bottom_sheet">Show Bottom Sheet</string>
+    <string name="collapse_bottom_sheet">Collapse Bottom Sheet</string>
+    <string name="hide_bottom_sheet">Hide Bottom Sheet</string>
+    <string name="show_bottom_sheet_dialog">Show Bottom Sheet Dialog</string>
 
     <string-array name="ringtone_list">
         <item>None</item>
